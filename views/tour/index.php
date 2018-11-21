@@ -14,18 +14,18 @@ $this->title = 'Tours | Austria';
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     <a class="navbar-brand page-scroll" href="#main">
-                        <img src="/tours/images/logo.png" alt="iLand" height="40px"/>
+                        <img src="/tours/images/logo_3.png" alt="iLand" height="40px"/>
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a class="page-scroll" style="font-weight: 800" href="#main">Главная</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#classes">Classes</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#features">Features</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#review">Reviews</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#pricing">Pricing</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#contact">Contact</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800"href="#classes">Инфо</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800"href="#features">Про университеты</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800"href="#review">Отзывы</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800"href="#pricing">Цены</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800"href="#contact">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,8 +41,10 @@ $this->title = 'Tours | Austria';
                     <div class="hero-content text-center">
                         <h1 class="wow fadeInUp newcll" data-wow-delay="0.1s" style="color: #00aeda">Обучение в Университетах Австрии</h1>
                         <p class="wow fadeInUp" data-wow-delay="0.2s"style="color: #00aeda;font-size: larger; font-weight:bold  "> Университеты Австрии открывают большие возможности и перспективы для студентов любых специальностей </p>
-                        <a href="#" class="btn btn-action wow fadeInUp"
-                           style="visibility: visible; animation-name: fadeInUp;">Получить консультацию</a>
+
+                        <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp"
+
+                           style="visibility: visible; animation-name: fadeInUp;">Получить консультацию через Messenger</a>
                     </div>
                 </div>
             </div>
@@ -332,11 +334,11 @@ $this->title = 'Tours | Austria';
             </div>
         </div>
         <!-- Bold call to action Section -->
-        <div class="feature-sub">
+        <div class="feature-sub" >
             <div class="container">
-                <div class="sub-inner">
+                <div class="sub-inner"style="margin-left: 110px">
                     <h1 class="wow fadeInUp">Есть вопросы? Ответим максимально быстро и полно.</h1>
-                    <a href="#" class="btn btn-action wow fadeInUp">Перезванить мне</a> </div>
+                    <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp">Свяжитесь со мной</a> </div>
             </div>
         </div>
         <!-- Client Section -->
@@ -346,42 +348,40 @@ $this->title = 'Tours | Austria';
                     <div class="reviews owl-carousel owl-theme">
                         <div class="review-single"><img class="img-circle" src="/tours/images/customer1.png" alt="Client Testimonoal" />
                             <div class="review-text wow fadeInUp" data-wow-delay="0.2s">
-                                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>
-                                    In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                                <h3>Johnathan Doe</h3>
-                                <h3>Marketing Head Matrix media</h3>
+                                <p>Со StudentWay мой сын поступил!!!! Это было очень приятное сотрудничество, никаких проблем и нареканий у нас нет. Мы благодарны агентству за их заботу, профессионализм и оперативность.
+                                    Сейчас мой сын проходит практику от ВУЗа на острове Майорка Испания, а также в этом году он был участником программы Erasmus  и на 10 дней ездил по обмену опытом на обучение.
+                                    Спасибо коллективу и преподавателям агентства!!!</p>
+                                <h3>Александр П.</h3>
                             </div>
                         </div>
                         <div class="review-single"><img class="img-circle" src="/tours/images/customer2.png" alt="Client Testimonoal" />
                             <div class="review-text">
-                                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>
-                                    In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                                <h3>Oidila Matik</h3>
-                                <h3>President Lexo Inc</h3>
+                                <p>С Командой StudentWay работать очень приятно, мы в данный момент только готовимся к поступлению,
+                                    и такой глобальный вопрос,
+                                    как выбор обучающего учреждения, можно сказать ключевой.
+                                    Специалисты в кратчайшие сроки сделали подборку по интересующему направлению,
+                                    проконсультировали по всем аспектам и отличиям. Благодарность вам за помощь, и процветания!</p>
+                                <h3>Наталья П.</h3>
                             </div>
                         </div>
                         <div class="review-single"><img class="img-circle" src="/tours/images/customer3.png" alt="Client Testimonoal" />
                             <div class="review-text">
-                                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>
-                                    In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                                <h3>- Alex Dattilo</h3>
-                                <h3>CEO Optima Inc</h3>
+                                <p>С Командой StudentWay работать очень приятно, мы в данный момент только готовимся к поступлению, и такой глобальный вопрос, как выбор обучающего учреждения, можно сказать ключевой. Специалисты в кратчайшие сроки сделали подборку по интересующему направлению, проконсультировали по всем аспектам и отличиям. Благодарность вам за помощь, и процветания!
+                                </p>
+                                <h3>- Артем А.</h3>
                             </div>
                         </div>
                         <div class="review-single"><img class="img-circle" src="/tours/images/customer4.png" alt="Client Testimonoal" />
                             <div class="review-text">
-                                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>
-                                    In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                                <h3>- Robert Hammer</h3>
-                                <h3>design head Omega Corp</h3>
+                                <p>"StudentWay" - команда высоко квалифицированных професcионалов, которая знает свое дело.StudentWay - отличное агенство, которое помогает абитуриентам поступить в европейские вузы, а школьникам подготовится к этому.</p>
+                                <h3>- Zering</h3>
                             </div>
                         </div>
                         <div class="review-single"><img class="img-circle" src="/tours/images/customer5.png" alt="Client Testimonoal" />
                             <div class="review-text">
-                                <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>
-                                    In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                                <h3>- Rita Valentine</h3>
-                                <h3>CEO Behena digital</h3>
+                                <p>-Вы очень крутая компания "StudentWay". В общем СПАСИБО Вам большое за Вашу работу, помощь и поддержку. С вами у нас получилось МНОГОЕ.
+                                    </p>
+                                <h3>- Надежда Н.</h3>
                             </div>
                         </div>
                     </div>
@@ -394,37 +394,41 @@ $this->title = 'Tours | Austria';
                 <div class="col-md-12 col-sm-12 nopadding">
                     <div class="pricing-intro">
                         <h1 class="wow fadeInUp" data-wow-delay="0s">PACKAGES</h1>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s"> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis <br class="hidden-xs">
-                            tempore consequuntur officia ducimus unde doloribus quod unt repell </p>
+<!--                        <p class="wow fadeInUp" data-wow-delay="0.2s"> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis <br class="hidden-xs">-->
+<!--                            tempore consequuntur officia ducimus unde doloribus quod unt repell </p>-->
                     </div>
                     <div class="col-sm-6">
                         <div class="table-left wow fadeInUp" data-wow-delay="0.4s">
                             <div class="pricing-details">
-                                <h2>For Beginners</h2>
-                                <span>$49.50</span>
-                                <ul>
-                                    <li>Consectetur adipiscing</li>
-                                    <li>Nunc luctus nulla et tellus</li>
-                                    <li>Suspendisse quis metus</li>
-                                    <li>Vestibul varius fermentum erat</li>
-                                </ul>
+                                <h2>For Beginners *</h2>
+                                <span>€ 1550</span>
+<!--                                <ul>-->
+<!--                                    <li>Consectetur adipiscing</li>-->
+<!--                                    <li>Nunc luctus nulla et tellus</li>-->
+<!--                                    <li>Suspendisse quis metus</li>-->
+<!--                                    <li>Vestibul varius fermentum erat</li>-->
+<!--                                </ul>-->
+                                <br>
                                 <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
                             </div>
+                            <div><p style="font-size: x-small; color: white">* Все расчеты осуществляются в национальной валюте Украины по курсу Национального банка Украины на дату оплаты.</p></div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
                             <div class="pricing-details">
-                                <h2>For Professionals</h2>
-                                <span>$99.50</span>
-                                <ul>
-                                    <li>Consectetur adipiscing</li>
-                                    <li>Nunc luctus nulla et tellus</li>
-                                    <li>Suspendisse quis metus</li>
-                                    <li>Vestibul varius fermentum erat</li>
-                                </ul>
+                                <h2>For Professionals *</h2>
+                                <span>€ 2050</span>
+<!--                                <ul>-->
+<!--                                    <li>Consectetur adipiscing</li>-->
+<!--                                    <li>Nunc luctus nulla et tellus</li>-->
+<!--                                    <li>Suspendisse quis metus</li>-->
+<!--                                    <li>Vestibul varius fermentum erat</li>-->
+<!--                                </ul>-->
+                                <br>
                                 <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
                             </div>
+                            <div><p style="font-size: x-small; color: white">* Все расчеты осуществляются в национальной валюте Украины по курсу Национального банка Украины на дату оплаты.</p></div>
                         </div>
                     </div>
                 </div>
@@ -450,3 +454,21 @@ $this->title = 'Tours | Austria';
                 </div>
             </div>
         </div>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId            : '292116624733185',
+                    autoLogAppEvents : true,
+                    xfbml            : true,
+                    version          : 'v3.2'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
