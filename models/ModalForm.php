@@ -23,4 +23,19 @@ class ModalForm extends Model
             ['phone_number', 'number']
         ];
     }
+    public function addRecord(){
+
+
+
+        if(isset($rec) && $rec->status==0)
+            return false;
+        else {
+            $newRecord = new Records();
+            $newRecord->name = $this->name;
+            $newRecord->email = $this->email;
+            $newRecord->phone_number = $this->phoneNumber;
+            $newRecord->status = 0;
+            return $newRecord->save(false);
+        }
+    }
 }

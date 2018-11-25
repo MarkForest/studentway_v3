@@ -8,7 +8,7 @@ $this->title = 'Tours | Austria';
  ?>
 <div class="wrapper">
     <div class="container">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background:#00aeda; margin-top: -10px ">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
@@ -20,12 +20,12 @@ $this->title = 'Tours | Austria';
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a class="page-scroll" style="font-weight: 800" href="#main">Главная</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#classes">Инфо</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#features">Про университеты</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#review">Отзывы</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#pricing">Цены</a></li>
-                        <li><a class="page-scroll" style="font-weight: 800"href="#contact">Контакты</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';" href="#main">Главная</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#classes">Инфо</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#features">Про университеты</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#review">Отзывы</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#pricing">Цены</a></li>
+                        <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#contact">Контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -225,7 +225,7 @@ $this->title = 'Tours | Austria';
             <div class="col-md-6 nopadding">
                 <div class="split-content second">
                     <h1 class="wow fadeInUp">О нас</h1>
-                    <p class="wow fadeInUp"> Как для любой другой семьи, для нас было критически важным предоставить возможность лучшего образования и реализации для наших детей. Но, к сожалению, наша страна проживания не могла предоставить эти возможности. Поэтому, мы решили искать другие варианты образования для наших детей за границей, чтобы обеспечить им лучшее будущее.
+                    <p class="wow fadeInUp" style="color: #4a4a4a; font-weight: 500"> Как для любой другой семьи, для нас было критически важным предоставить возможность лучшего образования и реализации для наших детей. Но, к сожалению, наша страна проживания не могла предоставить эти возможности. Поэтому, мы решили искать другие варианты образования для наших детей за границей, чтобы обеспечить им лучшее будущее.
                         Позже мы осознали, что другие семьи сталкиваются с такими же проблемами, поэтому в 2010 году мы создали Агентство образовательных программ StudentWay с целью предоставления лучшего будущего и возможностей для других семей.
                         В первые годы работы агентства, мы были сосредоточены преимущественно на программах поступления украинских абитуриентов в университеты и высшие школы Польши. На сегодняшний день, мы обеспечили успешное и комфортное поступление более 700 наших клиентов в такие страны как Польша, Чехия, Австрия, Словакия, Германия и Великобритания.
                     </p>
@@ -250,25 +250,25 @@ $this->title = 'Tours | Austria';
                 <div class="split-content">
                     <h1 class="wow fadeInUp">5 причины почему семьи доверяют нам <br>
                         поступление в Австрию:</h1>
-                    <h3 class="wow fadeInUp">Качество работы</h3>
+                    <h3 class="wow fadeInUp" style="font-weight: 700">Качество работы</h3>
                     <ul class="wow fadeInUp" style="list-style: none">
-                        <li>Многолетний опыт с сфере образования и тесное сотрудничество с университетами позволяет нам предоставлять высокое качество работы для наших клиентов.</li>
+                        <li style="color: #4a4a4a">Многолетний опыт с сфере образования и тесное сотрудничество с университетами позволяет нам предоставлять высокое качество работы для наших клиентов.</li>
                     </ul>
-                    <h3 class="wow fadeInUp">Мы понимаем потребности родителей и детей</h3>
+                    <h3 class="wow fadeInUp" style="font-weight: 700">Мы понимаем потребности родителей и детей</h3>
                     <ul class="wow fadeInUp" style="list-style: none">
-                        <li>Наша команда состоит как из опытных специалистов, чьи дети обучаются в Европе, так из специалистов и студентов, которые много лет назад закончили обучение в Австрии и живут сейчас там. Мы понимаем трудности родителей и детей, так как лично многократно через это прошли.</li>
+                        <li style="color: #4a4a4a">Наша команда состоит как из опытных специалистов, чьи дети обучаются в Европе, так из специалистов и студентов, которые много лет назад закончили обучение в Австрии и живут сейчас там. Мы понимаем трудности родителей и детей, так как лично многократно через это прошли.</li>
                     </ul>
-                    <h3 class="wow fadeInUp">Мы ориентированы на результаты</h3>
+                    <h3 class="wow fadeInUp"style="font-weight: 700">Мы ориентированы на результаты</h3>
                     <ul class="wow fadeInUp" style="list-style: none">
-                        <li>Для множества специальностей и университетов, мы гарантируем 100% поступление. В случае специальностей с большим конкурсом, размер оплаты за наши услуги зависит от успешности Вашего поступления.</li>
+                        <li style="color: #4a4a4a">Для множества специальностей и университетов, мы гарантируем 100% поступление. В случае специальностей с большим конкурсом, размер оплаты за наши услуги зависит от успешности Вашего поступления.</li>
                     </ul>
-                    <h3 class="wow fadeInUp">Мы работаем в удобное для Вас время</h3>
+                    <h3 class="wow fadeInUp"style="font-weight: 700">Мы работаем в удобное для Вас время</h3>
                     <ul class="wow fadeInUp" style="list-style: none">
-                        <li>Мы понимаем, что многие семьи имеют очень загруженные рабочие дни. Поэтому, мы подстраиваемся под Ваш график и работаем не только по вечерам, но и на выходных.</li>
+                        <li style="color: #4a4a4a">Мы понимаем, что многие семьи имеют очень загруженные рабочие дни. Поэтому, мы подстраиваемся под Ваш график и работаем не только по вечерам, но и на выходных.</li>
                     </ul>
-                    <h3 class="wow fadeInUp">Работаем в Австрии и Украине</h3>
+                    <h3 class="wow fadeInUp"style="font-weight: 700">Работаем в Австрии и Украине</h3>
                     <ul class="wow fadeInUp" style="list-style: none">
-                        <li>По сравнению со многими другими агентствами, мы имеем сотрудников как и в Украине, так и в Австрии. С одной стороны, это позволяет быстро решать все вопросы с документами на Украине и университетом / жильем / визой в Австрии. </li>
+                        <li style="color: #4a4a4a">По сравнению со многими другими агентствами, мы имеем сотрудников как и в Украине, так и в Австрии. С одной стороны, это позволяет быстро решать все вопросы с документами на Украине и университетом / жильем / визой в Австрии. </li>
                     </ul>
                 </div>
             </div>
@@ -338,7 +338,7 @@ $this->title = 'Tours | Austria';
             <div class="container">
                 <div class="sub-inner"style="margin-left: 110px">
                     <h1 class="wow fadeInUp">Есть вопросы? Ответим максимально быстро и полно.</h1>
-                    <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp">Свяжитесь со мной</a> </div>
+                    <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp">Свяжитесь с нами</a> </div>
             </div>
         </div>
         <!-- Client Section -->
@@ -393,14 +393,14 @@ $this->title = 'Tours | Austria';
             <div class="container">
                 <div class="col-md-12 col-sm-12 nopadding">
                     <div class="pricing-intro">
-                        <h1 class="wow fadeInUp" data-wow-delay="0s">PACKAGES</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay="0s">Цены</h1>
 <!--                        <p class="wow fadeInUp" data-wow-delay="0.2s"> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis <br class="hidden-xs">-->
 <!--                            tempore consequuntur officia ducimus unde doloribus quod unt repell </p>-->
                     </div>
                     <div class="col-sm-6">
                         <div class="table-left wow fadeInUp" data-wow-delay="0.4s">
                             <div class="pricing-details">
-                                <h2>For Beginners *</h2>
+                                <h2>Базовый пакет *</h2>
                                 <span>€ 1550</span>
 <!--                                <ul>-->
 <!--                                    <li>Consectetur adipiscing</li>-->
@@ -417,7 +417,7 @@ $this->title = 'Tours | Austria';
                     <div class="col-sm-6">
                         <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
                             <div class="pricing-details">
-                                <h2>For Professionals *</h2>
+                                <h2>Все включенно *</h2>
                                 <span>€ 2050</span>
 <!--                                <ul>-->
 <!--                                    <li>Consectetur adipiscing</li>-->
@@ -438,37 +438,65 @@ $this->title = 'Tours | Austria';
         <!-- Subscribe Form -->
         <div class="cta-sub no-color">
             <div class="container">
+
                 <div class="cta-inner">
-                    <h1 class="wow fadeInUp" data-wow-delay="0s">Sign Up to Our Newsletter and get exciting offers</h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.2s"> Enter your email address we promise, never disclose<br class="hidden-xs">
-                        or sell your email address. </p>
-                    <div class="form wow fadeInUp" data-wow-delay="0.3s">
-                        <form class="subscribe-form center-form wow zoomIn" action="php/subscribe.php" method="post" name="subscribeform" id="subscribeform">
-                            <input class="mail" type="email" name="email" placeholder="Join the wait list" autocomplete="off" id="subemail">
-                            <input class="submit-button" type="submit" value="Subscribe" name="send" id="subsubmit">
-                        </form>
-                        <!-- subscribe message -->
-                        <div id="mesaj"></div>
-                        <!-- subscribe message -->
+                    <h1 id="contact" class="wow fadeInUp" data-wow-delay="0s">Контакты</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">Связаться с нашими консультантами, Вы можете любым удобным для Вас способом</h3>
+                    <br>
+
+                    <hr>
+                    <br>
+                    <br>
+                    <div class="row" style="margin-left: 5px">
+                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                            <a href="viber://chat?number=+380676367247" class="thumbnail">
+                                <img src="/tours/images/viber-logo.png" class="img-circle" alt="...">
+                            </a>
+                            <p>Viber</p>
+                        </div>
+                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                            <a href="https://t.me/StudentWay_Ukraina" class="thumbnail">
+                                <img src="/tours/images/telegram_PNG27.png" alt="...">
+                            </a>
+                            <p>Telegram</p>
+                        </div>
+                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                            <a href="https://m.me/studentway.ukraina?ref=w3726749" class="thumbnail">
+                                <img src="/tours/images/facebook-messenger-chat-logo.png" alt="...">
+                            </a>
+                            <p>Messenger</p>
+                        </div>
+                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                            <a href="whatsapp://send?phone=+380968141132" class="thumbnail">
+                                <img src="/tours/images/whatsapp.png" alt="...">
+                            </a>
+                            <p>Whatsapp</p>
+                        </div>
+                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                            <a href="#" class="thumbnail">
+                                <img src="/tours/images/skype.png" alt="...">
+                            </a>
+                            <p>Skype</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+
+                    <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">Вы также можете позвонить по номерам:</h3>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-6"><h1><a style="color: white" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></h1></div>
+                        <div class="col-md-6"><h1><a style="color: white" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></h1></div>
+
                     </div>
                 </div>
+
             </div>
         </div>
-        <script>
-            window.fbAsyncInit = function() {
-                FB.init({
-                    appId            : '292116624733185',
-                    autoLogAppEvents : true,
-                    xfbml            : true,
-                    version          : 'v3.2'
-                });
-            };
-
-            (function(d, s, id){
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) {return;}
-                js = d.createElement(s); js.id = id;
-                js.src = "https://connect.facebook.net/en_US/sdk.js";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-        </script>

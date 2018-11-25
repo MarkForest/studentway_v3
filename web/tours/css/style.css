@@ -247,7 +247,7 @@ p {
 }
 
 .navbar-default .navbar-nav > li > a {
-  	color: #b7b0b0;
+  	color: green;
 	font-weight: 100;
   	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -1470,7 +1470,7 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 .split-content p {
 	font-size: 16px;
 	line-height: 1.4;
-	color: #A1A1A1;
+	color: #6d6b6b;
 	letter-spacing: 0;
 }
 
