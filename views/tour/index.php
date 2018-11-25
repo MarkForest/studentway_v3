@@ -334,10 +334,10 @@ $this->title = 'Tours | Austria';
             </div>
         </div>
         <!-- Bold call to action Section -->
-        <div class="feature-sub" >
+        <div class="feature-sub" style='background-image: url("../tours/images/question.jpg")' >
             <div class="container">
                 <div class="sub-inner"style="margin-left: 110px">
-                    <h1 class="wow fadeInUp">Есть вопросы? Ответим максимально быстро и полно.</h1>
+                    <h1 class="wow fadeInUp" style="color: #00aeda">Есть вопросы? Ответим максимально быстро и полно.</h1>
                     <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp">Свяжитесь с нами</a> </div>
             </div>
         </div>
