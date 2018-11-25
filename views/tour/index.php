@@ -110,7 +110,7 @@ $this->title = 'Tours | Austria';
         <div class="app-features text-center" id="features">
             <div class="container">
                 <h1 class="wow fadeInDown" data-wow-delay="0.1s">Про университеты</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">
+                <p class="wow fadeInDown" data-wow-delay="0.2s" style="color: #4a4a4a">
                     Университеты Австрии открывают большие возможности и перспективы<br class="hidden-xs">
                     для студентов любых специальностей</p>
 
@@ -129,7 +129,7 @@ $this->title = 'Tours | Austria';
                             <div class="feature-single">
                                 <div class="icon"> <i class="ion-ios-list-outline"></i> </div>
                                 <h1 style="font-weight: 800">Венский университет</h1>
-                                <p>
+                                <p style="color: #4a4a4a">
                                     Входит в список Топ 100 университетов Европы и воспитанник более 10 нобелевских лауреатов.
                                 </p>
                             </div>
@@ -142,7 +142,7 @@ $this->title = 'Tours | Austria';
                             <div class="feature-single">
                                 <div class="icon"> <i class="ion-ios-americanfootball-outline"></i> </div>
                                 <h1 style="font-weight: 800">Венский технический университет</h1>
-                                <p>
+                                <p style="color: #4a4a4a">
                                     Лучший технический университет в Австрии. Неоднократно входил в список 100 лучших технических университетов мира.
                                 </p>
                             </div>
@@ -165,7 +165,7 @@ $this->title = 'Tours | Austria';
                             <div class="feature-single">
                                 <div class="icon"> <i class="ion-ios-speedometer-outline"></i> </div>
                                 <h1 style="font-weight: 800">Венский университет экономики и бизнеса</h1>
-                                <p>
+                                <p style="color: #4a4a4a">
                                     Входит в список 50 лучших университетов экономики и бизнеса в Европе. Предлагает специальности, которые входят в список Топ 20 лучших в мире.
                                 </p>
                             </div>
@@ -179,7 +179,7 @@ $this->title = 'Tours | Austria';
                             <div class="feature-single">
                                 <div class="icon"> <i class="ion-ios-heart-outline"></i> </div>
                                 <h1 style="font-weight: 800">Другие университеты</h1>
-                                <p>
+                                <p style="color: #4a4a4a">
                                     Не нашли интересующий Вас университет? Свяжитесь с нами для получения детальной информации по выбранному Вами университету (+ кнопка «Связаться»)
                                 </p>
                             </div>
@@ -198,25 +198,25 @@ $this->title = 'Tours | Austria';
             <div class="col-md-5 nopadding">
                 <div class="split-content">
                     <h1 class="wow fadeInUp">Наши услуги:</h1>
-                    <h3 class="wow fadeInUp">Бесплатная 30-ти минутная консультация</h3>
+                    <h3 class="wow fadeInUp" style="font-weight: 700">Бесплатная 30-ти минутная консультация</h3>
                     <ul class="wow fadeInUp">
-                        <li>Выбор специальностей.</li>
-                        <li>Сроки подачи документов.</li>
-                        <li>Требуемые документы.</li>
+                        <li style="color: #4a4a4a">Выбор специальностей.</li>
+                        <li style="color: #4a4a4a">Сроки подачи документов.</li>
+                        <li style="color: #4a4a4a">Требуемые документы.</li>
                     </ul>
-                    <h3 class="wow fadeInUp">Поступление в Австрию:</h3>
+                    <h3 class="wow fadeInUp" style="font-weight: 700">Поступление в Австрию:</h3>
                     <ul class="wow fadeInUp">
-                        <li>Поступление в вуз.</li>
-                        <li>Бронирование жилья.</li>
-                        <li>Виза / Страховка / Прописка и тд.</li>
-                        <li>Сопровождение по приезду.</li>
+                        <li style="color: #4a4a4a">Поступление в вуз.</li>
+                        <li style="color: #4a4a4a">Бронирование жилья.</li>
+                        <li style="color: #4a4a4a">Виза / Страховка / Прописка и тд.</li>
+                        <li style="color: #4a4a4a">Сопровождение по приезду.</li>
                     </ul>
-                    <h3 class="wow fadeInUp">Опекунство для несовершеннолетних </h3>
+                    <h3 class="wow fadeInUp" style="font-weight: 700">Опекунство для несовершеннолетних </h3>
                     <ul class="wow fadeInUp">
-                        <li>Составление документов</li>
-                        <li>Предоставление «Опекуна».</li>
+                        <li style="color: #4a4a4a">Составление документов</li>
+                        <li style="color: #4a4a4a">Предоставление «Опекуна».</li>
                     </ul>
-                    <h3 class="wow fadeInUp">Ознакомительные поездки по вузам</h3>
+                    <h3 class="wow fadeInUp" style="font-weight: 700">Ознакомительные поездки по вузам</h3>
                 </div>
             </div>
         </div>
