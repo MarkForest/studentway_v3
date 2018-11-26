@@ -46,15 +46,13 @@ ToursAsset::register($this);
 <!-- Footer Section -->
 <div class="footer" >
     <div class="container">
-        <div class="col-md-6 contact">
-            <h1>About Trainer</h1>
-            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, <br>
-                vel illum dolore eu feugiat nulla facilisis at vero Duis autem vel eum iriure dolor in <br>
-                hendrerit in vulputate velit esse eros et accumsan.</p>
-            <p>Pellentesque eget dolor gravida, tempus purus ac, ultricies mauris. Etiam est nisl,<br>
-                molestie sed egestas bibendum, varius eu diam.</p>
+        <div class="col-md-5 contact">
+            <h1>О нас</h1>
+            <p> Мы - эксперты в сфере образования, туризма, страхования, визовых вопросов и работаем в команде уже более 15 лет.
+                Специализируемся на помощи студентам, которые хотят обучаться в в ближних странах Евросоюза - Польше, Чехии, Германии как в государственных, так и в приватных учебных заведениях</p>
+
         </div>
-        <div class="col-md-3 contact footer-menu">
+        <div class="col-md-2 contact footer-menu">
             <h1>Social</h1>
             <ul>
                 <li><a href="#">Facebook</a></li>
@@ -64,10 +62,12 @@ ToursAsset::register($this);
                 <li><a href="#">Google Plus</a></li>
             </ul>
         </div>
-        <div class="col-md-3 contact">
-            <h1>Contact Us</h1>
-            <p> Contact our 24/7 customer support if you have any questions. We'll help you out. </p>
-            <a href="mailto:support@gmail.com">contact@iland.com</a> </div>
+        <div class="col-md-5 contact">
+            <h1>Контакты</h1>
+            <p> 49050, г. Днепр, пр-т Гагарина, 115, офис 44 </p>
+            <p> Telephone: +38 097 113 76 29, +38 096 814 11 32</p>
+            <p> Fax: +38 056 732 40 55</p>
+            <a href="mailto:support@gmail.com">studentway@ua.fm</a> </div>
     </div>
 </div>
 <?php $this->endBody() ?>

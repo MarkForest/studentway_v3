@@ -1769,7 +1769,23 @@ input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placehold
 	background-attachment: fixed;
 	background-size: cover;
 }
-
+.cta-sub2{
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background: linear-gradient(to right, rgba(0, 174, 218, 0.5), rgba(0, 174, 218, 0.9)), url(../images/Screenshot_1.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.cta-sub3{
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background: linear-gradient(to right, rgba(0, 174, 218, 0.5), rgba(0, 174, 218, 0.9)), url(../images/question.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.contact-button :hover{
+	background: #8f989f;
+}
 .cta-inner {
 	text-align:center;
 	float: none;

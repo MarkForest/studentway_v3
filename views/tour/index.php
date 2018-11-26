@@ -11,16 +11,17 @@ $this->title = 'Tours | Austria';
         <nav class="navbar navbar-inverse navbar-fixed-top" style="background:#00aeda; margin-top: -10px ">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
+                <div class="navbar-header page-scroll" style="padding-top: 10px">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    <a class="navbar-brand page-scroll" href="#main">
-                        <img src="/tours/images/logo_3.png" alt="iLand" height="40px"/>
+                    <a  href="#main" style="color: white; text-decoration: none;" >
+                            <p style=" font-family: 'Open Sans', sans-serif ">Агентство StudentWay</p>
+                        <p style="font-size: 12px; margin-top: 5px "> т. 067 636 72 47</p>
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse navbar-right " id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';" href="#main">Главная</a></li>
+                        <li><a class="page-scroll " style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';" href="#main">Главная</a></li>
                         <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#classes">Инфо</a></li>
                         <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#features">Про университеты</a></li>
                         <li><a class="page-scroll" style="font-weight: 800; font-size: 20px; color: #5f5f5f;" onmouseover="this.style.color='#f5f5f5';" onmouseout="this.style.color='#5f5f5f';"href="#review">Отзывы</a></li>
@@ -34,13 +35,13 @@ $this->title = 'Tours | Austria';
     </div>
     <!-- /.container-fluid -->
 
-    <div class="main app form" id="main"><!-- Main Section-->
-        <div class="hero-section">
-            <div class="container nopadding">
+    <div class="main app form" id="main" ><!-- Main Section-->
+        <div class="cta-sub2 no-color">
+            <div class="container nopadding" >
                 <div class="col-md-12">
                     <div class="hero-content text-center">
-                        <h1 class="wow fadeInUp newcll" data-wow-delay="0.1s" style="color: #00aeda">Обучение в Университетах Австрии</h1>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s"style="color: #00aeda;font-size: larger; font-weight:bold  "> Университеты Австрии открывают большие возможности и перспективы для студентов любых специальностей </p>
+                        <h1 class="wow fadeInUp newcll" data-wow-delay="0.1s" style="color: white">Обучение в Университетах Австрии</h1>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s"style="color: white;font-size: larger; font-weight:bold  "> Университеты Австрии открывают большие возможности и перспективы для студентов любых специальностей </p>
 
                         <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp"
 
@@ -334,10 +335,10 @@ $this->title = 'Tours | Austria';
             </div>
         </div>
         <!-- Bold call to action Section -->
-        <div class="feature-sub" style='background-image: url("../tours/images/question.jpg")' >
+        <div class="feature-sub cta-sub3" >
             <div class="container">
                 <div class="sub-inner"style="margin-left: 110px">
-                    <h1 class="wow fadeInUp" style="color: #00aeda">Есть вопросы? Ответим максимально быстро и полно.</h1>
+                    <h1 class="wow fadeInUp">Есть вопросы? Ответим максимально быстро и полно.</h1>
                     <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp">Свяжитесь с нами</a> </div>
             </div>
         </div>
@@ -451,33 +452,33 @@ $this->title = 'Tours | Austria';
                     <br>
                     <br>
                     <div class="row" style="margin-left: 5px">
-                        <div class="col-xs-6 col-md-2" style="width: 230px">
-                            <a href="viber://chat?number=+380676367247" class="thumbnail">
+                        <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
+                            <a href="viber://chat?number=+380676367247" class="thumbnail ">
                                 <img src="/tours/images/viber-logo.png" class="img-circle" alt="...">
                             </a>
                             <p>Viber</p>
                         </div>
-                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                        <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="https://t.me/StudentWay_Ukraina" class="thumbnail">
                                 <img src="/tours/images/telegram_PNG27.png" alt="...">
                             </a>
                             <p>Telegram</p>
                         </div>
-                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                        <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="https://m.me/studentway.ukraina?ref=w3726749" class="thumbnail">
                                 <img src="/tours/images/facebook-messenger-chat-logo.png" alt="...">
                             </a>
                             <p>Messenger</p>
                         </div>
-                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                        <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="whatsapp://send?phone=+380968141132" class="thumbnail">
                                 <img src="/tours/images/whatsapp.png" alt="...">
                             </a>
                             <p>Whatsapp</p>
                         </div>
-                        <div class="col-xs-6 col-md-2" style="width: 230px">
+                        <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="#" class="thumbnail">
-                                <img src="/tours/images/skype.png" alt="...">
+                                <img src="/tours/images/skype-icon.png" alt="...">
                             </a>
                             <p>Skype</p>
                         </div>
