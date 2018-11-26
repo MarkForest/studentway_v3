@@ -55,11 +55,10 @@ ToursAsset::register($this);
         <div class="col-md-2 contact footer-menu">
             <h1>Social</h1>
             <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Github</a></li>
-                <li><a href="#">Pinterest</a></li>
-                <li><a href="#">Google Plus</a></li>
+                <li><a href="https://www.facebook.com/studentway.ukraina/">Facebook</a></li>
+                <li><a href="https://twitter.com/StudentwayU">Twitter</a></li>
+                <li><a href="https://www.instagram.com/studentway_ukraina/">Instagram</a></li>
+                <li><a href="https://web.telegram.org/#/im?p=@studentwaypl">Telegram</a></li>
             </ul>
         </div>
         <div class="col-md-5 contact">
