@@ -16,6 +16,9 @@
           'tours/css/ionicons.min.css',
           'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
           'tours/css/style.css',
+          'tours/css/extra-small.css',
+          'tours/css/main.css',
+          'tours/css/small.css',
 
       ];
       public $js = [

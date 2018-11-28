@@ -477,10 +477,10 @@ $this->title = 'Tours | Austria';
                             <p>Whatsapp</p>
                         </div>
                         <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
-                            <a href="#" class="thumbnail">
-                                <img src="/tours/images/skype-icon.png" alt="...">
+                            <a href="https://www.instagram.com/studentway_ukraina/" class="thumbnail">
+                                <img src="/tours/images/instagram-icon.png" alt="...">
                             </a>
-                            <p>Skype</p>
+                            <p>Instagram</p>
                         </div>
                     </div>
                     <hr>
