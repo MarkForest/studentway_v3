@@ -188,26 +188,79 @@ $this->title = 'Tours | Austria';
                         </div>
 
                     </div>
+                </div>
 
-
-                    <div class="row">
-                        <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
-                            <div class="feature-single">
-                                <div class="icon"> <i class="ion-ios-heart-outline"></i> </div>
-                                <h1 style="font-weight: 800">Другие университеты</h1>
-                                <p style="color: #4a4a4a">
-                                    Не нашли интересующий Вас университет? Свяжитесь с нами для получения детальной информации по выбранному Вами университету
-                                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="feature-single">
+                        <div class="icon"> <i class="ion-ios-heart-outline"></i> </div>
+                        <h1 style="font-weight: 800">Другие университеты</h1>
+                        <br>
+                        <div id="listFaculties" class = "grey">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-12 col-xs-offset-0  col-sm-10 col-sm-offset-1
+                                                    col-md-10 col-md-offset-1">
+                                        <br>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
+                                                    col-md-offset-1 text-center faculty">
+                                        <img src="/tours/images/500X500.png" alt="img">
+                                        <h4>Заголовок</h4>
+                                        <p>описание</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
+                                                    text-center faculty">
+                                        <img src="/tours/images/500X500.png" alt="img">
+                                        <h4>Заголовок</h4>
+                                        <p>описание</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
+                                                    text-center faculty">
+                                        <img src="/tours/images/500X500.png" alt="img">
+                                        <h4>Заголовок</h4>
+                                        <p>описание</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
+                                                    text-center faculty">
+                                        <img src="/tours/images/500X500.png" alt="img">
+                                        <h4>Заголовок</h4>
+                                        <p>описание</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                    <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
+                                                    text-center faculty">
+                                        <img src="/tours/images/500X500.png" alt="img">
+                                        <h4>Заголовок</h4>
+                                        <p>описание</p>
+                                        <a href="#">Подробнее</a>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp"
+                        </div
+                        </br>
+                        </br>
 
-                               style="visibility: visible; animation-name: fadeInUp;">Получить консультацию</a>
-                        </div>
-
+                        <p style="color: #4a4a4a">
+                            Не нашли интересующий Вас университет? Свяжитесь с нами для получения детальной информации по выбранному Вами университету
+                        </p>
                     </div>
 
+                    <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp"
+
+                       style="visibility: visible; animation-name: fadeInUp;">Получить консультацию</a>
                 </div>
+
             </div>
+            <br>
             <div>
                 <div class="btn-group">
                     <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
