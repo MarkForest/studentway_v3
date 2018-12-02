@@ -23,4 +23,11 @@ class TourController extends Controller
         $form = new ModalForm();
         return $this->render('form',compact('form'));
     }
+
+    public function actionVenskiyTechnicheskiyUniversitet(){
+        return $this->render('venskiy-technicheskiy-universitet',[]);
+    }
+    public function actionVenskiiUniversitetEkonomikiIBiznesa(){
+        return $this->render('venskii-universitet-ekonomiki-i-biznesa',[]);
+    }
 }

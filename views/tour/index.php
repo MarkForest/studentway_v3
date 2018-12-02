@@ -103,10 +103,24 @@ $this->title = 'Tours | Austria';
                                 <p> Несмотря на высокий уровень образования, обучение в государственных университетах Австрии является одним из самых доступных в мире – всего 745 евро в семестр. </p>
                             </div>
                         </div>
+
                     </div>
+
+                </div>
+
+            </div>
+            <div>
+                <h6 style="color: white; font-weight: bold">Есть вопросы? Ответим максимально быстро и полно.</h6>
+                <br>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
+                    <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></button>
                 </div>
             </div>
+
         </div>
+
+
         <!-- Features Section -->
         <div class="app-features text-center" id="features">
             <div class="container">
@@ -114,9 +128,6 @@ $this->title = 'Tours | Austria';
                 <p class="wow fadeInDown" data-wow-delay="0.2s" style="color: #4a4a4a">
                     Университеты Австрии открывают большие возможности и перспективы<br class="hidden-xs">
                     для студентов любых специальностей</p>
-
-
-
 
                 <div class="col-md-12">
                     <div class="row">
@@ -142,10 +153,12 @@ $this->title = 'Tours | Austria';
                         <div class="col-md-7 wow fadeInDown" data-wow-delay="0.2s">
                             <div class="feature-single">
                                 <div class="icon"> <i class="ion-ios-americanfootball-outline"></i> </div>
-                                <h1 style="font-weight: 800">Венский технический университет</h1>
+                                <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskiy-technicheskiy-universitet'])?>"><h1 style="font-weight: 800">Венский технический университет</h1></a>
                                 <p style="color: #4a4a4a">
                                     Лучший технический университет в Австрии. Неоднократно входил в список 100 лучших технических университетов мира.
                                 </p>
+                                <br>
+                                <a  target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskiy-technicheskiy-universitet'])?>">Подробнее</a>
                             </div>
                         </div>
                         <div class="col-md-5 wow fadeInDown" data-wow-delay="0.2s">
@@ -165,10 +178,12 @@ $this->title = 'Tours | Austria';
                         <div class="col-md-7 wow fadeInDown" data-wow-delay="0.2s">
                             <div class="feature-single">
                                 <div class="icon"> <i class="ion-ios-speedometer-outline"></i> </div>
-                                <h1 style="font-weight: 800">Венский университет экономики и бизнеса</h1>
+                                <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskii-universitet-ekonomiki-i-biznesa'])?>"><h1 style="font-weight: 800">Венский университет экономики и бизнеса</h1></a>
                                 <p style="color: #4a4a4a">
                                     Входит в список 50 лучших университетов экономики и бизнеса в Европе. Предлагает специальности, которые входят в список Топ 20 лучших в мире.
                                 </p>
+                                <br>
+                                <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskii-universitet-ekonomiki-i-biznesa'])?>">Подробнее</a>
                             </div>
                         </div>
 
@@ -181,13 +196,22 @@ $this->title = 'Tours | Austria';
                                 <div class="icon"> <i class="ion-ios-heart-outline"></i> </div>
                                 <h1 style="font-weight: 800">Другие университеты</h1>
                                 <p style="color: #4a4a4a">
-                                    Не нашли интересующий Вас университет? Свяжитесь с нами для получения детальной информации по выбранному Вами университету (+ кнопка «Связаться»)
+                                    Не нашли интересующий Вас университет? Свяжитесь с нами для получения детальной информации по выбранному Вами университету
                                 </p>
                             </div>
+                            <a href="https://m.me/studentway.ukraina?ref=w3726749" class="btn btn-action wow fadeInUp"
+
+                               style="visibility: visible; animation-name: fadeInUp;">Получить консультацию</a>
                         </div>
 
                     </div>
 
+                </div>
+            </div>
+            <div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
+                    <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></button>
                 </div>
             </div>
         </div>
@@ -219,8 +243,17 @@ $this->title = 'Tours | Austria';
                     </ul>
                     <h3 class="wow fadeInUp" style="font-weight: 700">Ознакомительные поездки по вузам</h3>
                 </div>
+
+            </div>
+
+            <div style="text-align: center;">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
+                    <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></button>
+                </div>
             </div>
         </div>
+
         <!-- Split Feature2 Section -->
         <div class="split-features2">
             <div class="col-md-6 nopadding">
@@ -271,6 +304,14 @@ $this->title = 'Tours | Austria';
                     <ul class="wow fadeInUp" style="list-style: none">
                         <li style="color: #4a4a4a">По сравнению со многими другими агентствами, мы имеем сотрудников как и в Украине, так и в Австрии. С одной стороны, это позволяет быстро решать все вопросы с документами на Украине и университетом / жильем / визой в Австрии. </li>
                     </ul>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <h6 style="color: black; font-weight: bold">Есть вопросы? Наши консультанты помогут Вам.</h6>
+                <br>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
+                    <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></button>
                 </div>
             </div>
         </div>
@@ -333,6 +374,14 @@ $this->title = 'Tours | Austria';
                     </div>
                 </div>
             </div>
+            <div style="text-align: center;">
+                <h6 style="color: white; font-weight: bold">Есть вопросы? Свяжитесь с нами .</h6>
+                <br>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
+                    <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></button>
+                </div>
+            </div>
         </div>
         <!-- Bold call to action Section -->
         <div class="feature-sub cta-sub3" >
@@ -388,6 +437,14 @@ $this->title = 'Tours | Austria';
                     </div>
                 </div>
             </div>
+            <div style="text-align: center;">
+                <h6 style="color: white; font-weight: bold">Есть вопросы? Всегда рады Вам помочь.</h6>
+                <br>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
+                    <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></button>
+                </div>
+            </div>
         </div>
         <!-- Package Section -->
         <div id="pricing" class="pricing-section text-center">
@@ -432,6 +489,14 @@ $this->title = 'Tours | Austria';
                             <div><p style="font-size: x-small; color: white">* Все расчеты осуществляются в национальной валюте Украины по курсу Национального банка Украины на дату оплаты.</p></div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <h6 style="color: white; font-weight: bold">Есть вопросы? Обращайтесь за профессиональной консультацией</h6>
+                <br>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить" href="tel:+38 067 636 72 47">+38 067 636 72 47</a></button>
+                    <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить" href="tel:+38 050 270 88 32">+38 050 270 88 32</a></button>
                 </div>
             </div>
         </div>
