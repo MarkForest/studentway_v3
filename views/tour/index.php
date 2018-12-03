@@ -210,38 +210,41 @@ $this->title = 'Tours | Austria';
                                 <div class="row">
                                     <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
                                                     col-md-offset-1 text-center faculty">
-                                        <img src="/tours/images/500X500.png" alt="img">
-                                        <h4>Заголовок</h4>
-                                        <p>описание</p>
-                                        <a href="#">Подробнее</a>
+                                        <img src="/tours/images/venskij-agrarnyij-universitet.jpg" alt="img">
+                                        <h4>Венский Аграрный Университет</h4>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskij-agrarnyij-universitet'])?>">Подробнее</a>
                                     </div>
                                     <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
                                                     text-center faculty">
-                                        <img src="/tours/images/500X500.png" alt="img">
-                                        <h4>Заголовок</h4>
-                                        <p>описание</p>
-                                        <a href="#">Подробнее</a>
+                                        <img src="/tours/images/venskyy-medytsynskyy-unyversytet.jpg" alt="img">
+                                        <h4>Венский Медицинский Университет</h4>
+                                        <br>
+                                        <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskyy-medytsynskyy-unyversytet'])?>">Подробнее</a>
                                     </div>
                                     <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
                                                     text-center faculty">
-                                        <img src="/tours/images/500X500.png" alt="img">
-                                        <h4>Заголовок</h4>
-                                        <p>описание</p>
-                                        <a href="#">Подробнее</a>
+                                        <img src="/tours/images/videnskij-veterinarnij-universite.jpg" alt="img">
+                                        <h4>Венский Ветеринарный Университет</h4>
+                                        <br>
+                                        <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/videnskij-veterinarnij-universite'])?>">Подробнее</a>
                                     </div>
                                     <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
                                                     text-center faculty">
-                                        <img src="/tours/images/500X500.png" alt="img">
-                                        <h4>Заголовок</h4>
-                                        <p>описание</p>
-                                        <a href="#">Подробнее</a>
+                                        <img src="/tours/images/venskiy-universitet-prikladnyh-nauk.jpg" alt="img">
+                                        <h4>Венский Университет Прикладных Наук</h4>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskiy-universitet-prikladnyh-nauk'])?>">Подробнее</a>
                                     </div>
                                     <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-0 col-md-2
                                                     text-center faculty">
-                                        <img src="/tours/images/500X500.png" alt="img">
-                                        <h4>Заголовок</h4>
-                                        <p>описание</p>
-                                        <a href="#">Подробнее</a>
+                                        <img src="/tours/images/coursi-nemeckogo-v-avstii.jpg" alt="img">
+                                        <h4>Курсы немецкого языка в Вене</h4>
+                                        <br>
+                                        <br>
+                                        <a target="_blank" href="<?php echo Yii::$app->urlManager->createUrl(['tour/coursi-nemeckogo-v-avstii'])?>">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
