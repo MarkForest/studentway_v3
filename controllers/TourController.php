@@ -24,6 +24,9 @@ class TourController extends Controller
         return $this->render('form',compact('form'));
     }
 
+    public function actionVenskiyUniversitet(){
+        return $this->render('venskiy-universitet',[]);
+    }
     public function actionVenskiyTechnicheskiyUniversitet(){
         return $this->render('venskiy-technicheskiy-universitet',[]);
     }

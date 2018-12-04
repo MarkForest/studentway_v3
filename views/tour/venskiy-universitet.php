@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Венский Аграрный Университет</title>
+    <title>Венский Университет</title>
 </head>
 <body>
 <div id="home" style="background-color: #00b3ee">
