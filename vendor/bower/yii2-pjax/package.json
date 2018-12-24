@@ -9,7 +9,7 @@
       "url": "https://github.com/yiisoft/jquery-pjax/blob/master/LICENSE"
     }
   ],
-  "files" : [
+  "files": [
     "LICENSE",
     "jquery.pjax.js"
   ],

@@ -46,6 +46,7 @@ AdminAsset::register($this);
                 ['label' => 'Курсы Польского', 'url' => ['/admin/admin-course-polish/index']],
                 ['label' => 'Мобильный(Курсы)', 'url' => ['/admin/mobi-course-polish/index']],
                 ['label' => 'Институты', 'url' => ['/admin/institutes/index']],
+                ['label' => 'Университеты в Австрии', 'url' => ['/admin/tour/index']],
                 ['label' => 'Изображения', 'url' => ['/admin/images/index']],
 
                 Yii::$app->user->isGuest ? (

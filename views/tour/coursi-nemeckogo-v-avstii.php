@@ -38,7 +38,7 @@
     </div>
 </div>
 <br>
-<a href="./" class="btn btn-info" style="position: fixed;left: 10px;">Вернуться назад</a>
+<a href="./#other_universities" class="btn btn-danger" style="position: fixed;left: 10px;">Вернуться назад</a>
 <div id="listFaculties" class = "grey">
     <div class="container">
         <div class="row">

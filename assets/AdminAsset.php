@@ -18,15 +18,18 @@ class AdminAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        'tours/css/adminStyle.css',
         'css/style.css',
         'css/site.css',
         'css/simple-line-icons.css',
         'institute/css/style.css',
         'institute/css/admin-institutes.css',
+
     ];
     public $js = [
         'js/sendForms.js',
-        'institute/js/ajax.js'
+        'institute/js/ajax.js',
+        'tours/js/ajax.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

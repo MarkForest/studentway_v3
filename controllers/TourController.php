@@ -9,20 +9,61 @@
 namespace app\controllers;
 
 
-use app\models\ModalForm;
+use app\models\tour\TourAboutUniversityBlock;
+use app\models\tour\TourAboutUsBlock;
+use app\models\tour\TourFirstBlock;
+use app\models\tour\TourHaveQuestionsBlock;
+use app\models\tour\TourInfoBlock;
+use app\models\tour\TourOurServicesBlock;
+use app\models\tour\TourQuestionsBlock;
+use app\models\tour\TourReviewBlock;
+use Yii;
+use app\models\tour\TourHead;
+use app\models\tour\TourHeadMenus;
 use yii\web\Controller;
 
 class TourController extends Controller
 {
-    public $layout = 'tours';
-    public function actionIndex(){
-        return $this->render('index',[]);
+    public $layout = '/tours';
+
+    /**
+     * @param int $id
+     * @return string
+     */
+    public function actionIndex($id=1){
+        //head
+        $tour_head=TourHead::findOne(['id'=>$id]);
+        $tour_head_menus=TourHeadMenus::find(['tour_head_id'=>$id])->all();
+        //first block
+        $tour_first_block=TourFirstBlock::findOne(['id'=>$id]);
+        //info block
+        $tour_info_block=TourInfoBlock::findOne(['id'=>$id]);
+        //about university
+        $tour_about_university_block = TourAboutUniversityBlock::findOne(['id'=>$id]);
+        //our services
+        $tour_our_services_block = TourOurServicesBlock::findOne(['id'=>$id]);
+        //about us
+        $tour_about_us_block = TourAboutUsBlock::findOne(['id'=>$id]);
+        //questions
+        $tour_questions_block = TourQuestionsBlock::findOne(['id'=>$id]);
+        //have questions
+        $tour_have_questions_block = TourHaveQuestionsBlock::findOne(['id'=>$id]);
+        //review
+        $tour_review_block = TourReviewBlock::findOne(['id'=>$id]);
+        return $this->render('index', [
+            'tour_head'=>$tour_head,
+            'tour_head_menus'=>$tour_head_menus,
+            'tour_first_block'=>$tour_first_block,
+            'tour_info_block'=>$tour_info_block,
+            'tour_about_university_block'=>$tour_about_university_block,
+            'tour_our_services_block'=>$tour_our_services_block,
+            'tour_about_us_block'=>$tour_about_us_block,
+            'tour_questions_block'=>$tour_questions_block,
+            'tour_have_questions_block'=>$tour_have_questions_block,
+            'tour_review_block'=>$tour_review_block,
+        ]);
     }
-    public function actionModalForm()
-    {
-        $form = new ModalForm();
-        return $this->render('form',compact('form'));
-    }
+
 
     public function actionVenskiyUniversitet(){
         return $this->render('venskiy-universitet',[]);
