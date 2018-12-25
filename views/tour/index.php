@@ -614,15 +614,15 @@ $this->title = 'Tours | Austria';
     <div class="container">
         <div class="col-md-12 col-sm-12 nopadding">
             <div class="pricing-intro">
-                <h1 class="wow fadeInUp" data-wow-delay="0s">Цены</h1>
+                <h1 class="wow fadeInUp" data-wow-delay="0s"><?=$tour_prices_block['title_big_head']?></h1>
                 <!--                        <p class="wow fadeInUp" data-wow-delay="0.2s"> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis <br class="hidden-xs">-->
                 <!--                            tempore consequuntur officia ducimus unde doloribus quod unt repell </p>-->
             </div>
             <div class="col-sm-6">
                 <div class="table-left wow fadeInUp" data-wow-delay="0.4s">
                     <div class="pricing-details">
-                        <h2>Базовый пакет *</h2>
-                        <span>€ 1550</span>
+                        <h2><?=$tour_prices_block['title_first']?></h2>
+                        <span><?=$tour_prices_block['price_first']?></span>
                         <!--                                <ul>-->
                         <!--                                    <li>Consectetur adipiscing</li>-->
                         <!--                                    <li>Nunc luctus nulla et tellus</li>-->
@@ -630,17 +630,16 @@ $this->title = 'Tours | Austria';
                         <!--                                    <li>Vestibul varius fermentum erat</li>-->
                         <!--                                </ul>-->
                         <br>
-                        <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
+                        <button class="btn btn-primary btn-action btn-fill"><?=$tour_prices_block['btn_rate_first']?></button>
                     </div>
-                    <div><p style="font-size: x-small; color: white">* Все расчеты осуществляются в национальной
-                            валюте Украины по курсу Национального банка Украины на дату оплаты.</p></div>
+                    <div><p style="font-size: x-small; color: white"><?=$tour_prices_block['little_text_first']?></p></div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
                     <div class="pricing-details">
-                        <h2>Все включенно *</h2>
-                        <span>€ 2050</span>
+                        <h2><?=$tour_prices_block['title_second']?></h2>
+                        <span><?=$tour_prices_block['price_second']?></span>
                         <!--                                <ul>-->
                         <!--                                    <li>Consectetur adipiscing</li>-->
                         <!--                                    <li>Nunc luctus nulla et tellus</li>-->
@@ -648,24 +647,22 @@ $this->title = 'Tours | Austria';
                         <!--                                    <li>Vestibul varius fermentum erat</li>-->
                         <!--                                </ul>-->
                         <br>
-                        <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
+                        <button class="btn btn-primary btn-action btn-fill"><?=$tour_prices_block['btn_rate_second']?></button>
                     </div>
-                    <div><p style="font-size: x-small; color: white">* Все расчеты осуществляются в национальной
-                            валюте Украины по курсу Национального банка Украины на дату оплаты.</p></div>
+                    <div><p style="font-size: x-small; color: white"><?=$tour_prices_block['little_text_second']?></p></div>
                 </div>
             </div>
         </div>
     </div>
     <div style="text-align: center;">
-        <h6 style="color: white; font-weight: bold">Есть вопросы? Обращайтесь за профессиональной
-            консультацией</h6>
+        <h6 style="color: white; font-weight: bold"><?=$tour_prices_block['text_footer']?></h6>
         <br>
         <div class="btn-group">
             <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить"
-                                                          href="tel:+38 067 636 72 47">+38 067 636 72 47</a>
+                                                          href="tel:<?=$tour_prices_block['btn_first_text']?>"><?=$tour_prices_block['btn_first_text']?></a>
             </button>
             <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить"
-                                                             href="tel:+38 050 270 88 32">+38 050 270 88 32</a>
+                                                             href="tel:<?=$tour_prices_block['btn_second_text']?>"><?=$tour_prices_block['btn_second_text']?></a>
             </button>
         </div>
     </div>
@@ -676,12 +673,15 @@ $this->title = 'Tours | Austria';
     <div class="container">
 
         <div class="cta-inner">
-            <h1 id="contact" class="wow fadeInUp" data-wow-delay="0s">Контакты</h1>
+            <h1 id="contacts" class="wow fadeInUp" data-wow-delay="0s">
+                <?=$tour_contact_block['title_big_head']?>
+            </h1>
             <br>
             <br>
             <br>
-            <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">Связаться с
-                нашими консультантами, Вы можете любым удобным для Вас способом</h3>
+            <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">
+                <?=$tour_contact_block['text_head']?>
+            </h3>
             <br>
 
             <hr>
@@ -692,48 +692,51 @@ $this->title = 'Tours | Austria';
                     <a href="viber://chat?number=+380676367247" class="thumbnail ">
                         <img src="/tours/images/viber-logo.png" class="img-circle" alt="...">
                     </a>
-                    <p>Viber</p>
+                    <p><?=$tour_contact_block['description_first']?></p>
                 </div>
                 <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                     <a href="https://t.me/StudentWay_Ukraina" class="thumbnail">
                         <img src="/tours/images/telegram_PNG27.png" alt="...">
                     </a>
-                    <p>Telegram</p>
+                    <p><?=$tour_contact_block['description_second']?></p>
                 </div>
                 <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                     <a href="https://m.me/studentway.ukraina?ref=w3726749" class="thumbnail">
                         <img src="/tours/images/facebook-messenger-chat-logo.png" alt="...">
                     </a>
-                    <p>Messenger</p>
+                    <p><?=$tour_contact_block['description_third']?></p>
                 </div>
                 <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                     <a href="whatsapp://send?phone=+380968141132" class="thumbnail">
                         <img src="/tours/images/whatsapp.png" alt="...">
                     </a>
-                    <p>Whatsapp</p>
+                    <p><?=$tour_contact_block['description_four']?></p>
                 </div>
                 <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                     <a href="https://www.instagram.com/studentway_ukraina/" class="thumbnail">
                         <img src="/tours/images/instagram-icon.png" alt="...">
                     </a>
-                    <p>Instagram</p>
+                    <p><?=$tour_contact_block['description_five']?></p>
                 </div>
             </div>
             <hr>
             <br>
             <br>
 
-            <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">Вы также можете
-                позвонить по номерам:</h3>
+            <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">
+                <?=$tour_contact_block['text_footer']?>
+            </h3>
             <br>
             <br>
             <br>
             <div class="row">
 
                 <div class="col-md-6"><h1><a style="color: white" title="Позвонить"
-                                             href="tel:+38 067 636 72 47">+38 067 636 72 47</a></h1></div>
+                                             href="tel:
+<?=$tour_contact_block['link_phone_first']?>"><?=$tour_contact_block['link_phone_first']?></a></h1></div>
                 <div class="col-md-6"><h1><a style="color: white" title="Позвонить"
-                                             href="tel:+38 050 270 88 32">+38 050 270 88 32</a></h1></div>
+                                             href="tel:
+<?=$tour_contact_block['link_phone_second']?>"><?=$tour_contact_block['link_phone_second']?></a></h1></div>
 
             </div>
         </div>

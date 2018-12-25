@@ -200,4 +200,70 @@ $(document).ready(function(){
         });
         return false;
     });
+    $('#TourPricesBlockForm').on('beforeSubmit',function(){
+        var data = $(this).serialize();
+        $.ajax({
+            url: '/admin/tour/save-prices-block',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+    $('#TourContactBlockForm').on('beforeSubmit',function(){
+        var data = $(this).serialize();
+        $.ajax({
+            url: '/admin/tour/save-contact-block',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
+    $('#TourFooterBlockForm').on('beforeSubmit',function(){
+        var data = $(this).serialize();
+        $.ajax({
+            url: '/admin/tour/save-footer-block',
+            type: 'POST',
+            data: data,
+            success: function (res) {
+                if(res == true) {
+                    $('.alert-success').fadeToggle(500);
+                    $('.alert-success').fadeOut(10000);
+                }
+                else{
+                    $('.alert-danger').fadeToggle(500);
+                    $('.alert-danger').fadeOut(20000);
+                }
+            },
+            error:function () {
+                alert('Error')
+            }
+        });
+        return false;
+    });
 })

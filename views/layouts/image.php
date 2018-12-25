@@ -48,6 +48,7 @@ ImageAsset::register($this);
                 ['label' => 'Институты', 'url' => ['/admin/institutes/index']],
                 ['label' => 'Изображения Курсы', 'url' => ['/admin/images/index']],
                 ['label' => 'Изображения Институты', 'url' => ['/admin/images/image-institutes']],
+                ['label' => 'Изобр Австрии', 'url' => ['/admin/images/image-tour']],
 
                 Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]

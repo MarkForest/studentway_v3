@@ -1177,19 +1177,33 @@ $this->title = 'Tours | Austria';
         <!-- конец блока Отзывы -->
         <div style="width: 100%; height: 10px; background-color: black"></div>
         <!-- блок Цены -->
-        <div id="pricing" class="pricing-section text-center">
+        <?php $form = ActiveForm::begin(['id'=>'TourPricesBlockForm']);?>
+        <div id="pricing" class="pricing-section text-center info">
             <div class="container">
                 <div class="col-md-12 col-sm-12 nopadding">
                     <div class="pricing-intro">
-                        <h1 class="wow fadeInUp" data-wow-delay="0s">Цены</h1>
+                        <h1 class="wow fadeInUp" data-wow-delay="0s">
+                            <?= $form->field($tour_prices_block_form, 'title_big_head')->textInput([
+                                'value'=>$tour_prices_block->title_big_head,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label(false)?>
+                        </h1>
                         <!--                        <p class="wow fadeInUp" data-wow-delay="0.2s"> Lorem ipsum dolor sit. Incidunt laborum beatae earum nihil odio consequatur officiis <br class="hidden-xs">-->
                         <!--                            tempore consequuntur officia ducimus unde doloribus quod unt repell </p>-->
                     </div>
                     <div class="col-sm-6">
                         <div class="table-left wow fadeInUp" data-wow-delay="0.4s">
                             <div class="pricing-details">
-                                <h2>Базовый пакет *</h2>
-                                <span>€ 1550</span>
+                                <h2>
+                                    <?= $form->field($tour_prices_block_form, 'title_first')->textInput([
+                                        'value'=>$tour_prices_block->title_first,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?>
+                                </h2>
+                                <span> <?= $form->field($tour_prices_block_form, 'price_first')->textInput([
+                                        'value'=>$tour_prices_block->price_first,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?></span>
                                 <!--                                <ul>-->
                                 <!--                                    <li>Consectetur adipiscing</li>-->
                                 <!--                                    <li>Nunc luctus nulla et tellus</li>-->
@@ -1197,17 +1211,37 @@ $this->title = 'Tours | Austria';
                                 <!--                                    <li>Vestibul varius fermentum erat</li>-->
                                 <!--                                </ul>-->
                                 <br>
-                                <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
+                                <button class="btn btn-primary btn-action btn-fill">
+                                    <?= $form->field($tour_prices_block_form, 'btn_rate_first')->textInput([
+                                        'value'=>$tour_prices_block->btn_rate_first,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?>
+                                </button>
                             </div>
-                            <div><p style="font-size: x-small; color: white">* Все расчеты осуществляются в национальной
-                                    валюте Украины по курсу Национального банка Украины на дату оплаты.</p></div>
+                            <div><p style="font-size: x-small; color: white">
+                                    <?= $form->field($tour_prices_block_form, 'little_text_first')->textarea([
+                                        'value'=>$tour_prices_block->little_text_first,
+                                        'style'=>'text-align:center;color:black;font-size:15px',
+                                        'rows'=>3,
+                                    ])->label(false)?>
+                                </p></div>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="table-right wow fadeInUp" data-wow-delay="0.6s">
                             <div class="pricing-details">
-                                <h2>Все включенно *</h2>
-                                <span>€ 2050</span>
+                                <h2>
+                                    <?= $form->field($tour_prices_block_form, 'title_second')->textInput([
+                                        'value'=>$tour_prices_block->title_second,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?>
+                                </h2>
+                                <span>
+                                    <?= $form->field($tour_prices_block_form, 'price_second')->textInput([
+                                        'value'=>$tour_prices_block->price_second,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?>
+                                </span>
                                 <!--                                <ul>-->
                                 <!--                                    <li>Consectetur adipiscing</li>-->
                                 <!--                                    <li>Nunc luctus nulla et tellus</li>-->
@@ -1215,97 +1249,270 @@ $this->title = 'Tours | Austria';
                                 <!--                                    <li>Vestibul varius fermentum erat</li>-->
                                 <!--                                </ul>-->
                                 <br>
-                                <button class="btn btn-primary btn-action btn-fill">Get Plan</button>
+                                <button class="btn btn-primary btn-action btn-fill">
+                                    <?= $form->field($tour_prices_block_form, 'btn_rate_second')->textInput([
+                                        'value'=>$tour_prices_block->btn_rate_second,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?>
+                                </button>
                             </div>
-                            <div><p style="font-size: x-small; color: white">* Все расчеты осуществляются в национальной
-                                    валюте Украины по курсу Национального банка Украины на дату оплаты.</p></div>
+                            <div><p style="font-size: x-small; color: white">
+                                    <?= $form->field($tour_prices_block_form, 'little_text_second')->textarea([
+                                        'value'=>$tour_prices_block->little_text_second,
+                                        'style'=>'text-align:center;color:black;font-size:15px',
+                                        'rows'=>3,
+                                    ])->label(false)?>
+                                </p></div>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="text-align: center;">
-                <h6 style="color: white; font-weight: bold">Есть вопросы? Обращайтесь за профессиональной
-                    консультацией</h6>
+                <h6 style="color: white; font-weight: bold">
+                    <?= $form->field($tour_prices_block_form, 'text_footer')->textInput([
+                        'value'=>$tour_prices_block->text_footer,
+                        'style'=>'text-align:center;color:black;font-size:20px',
+                    ])->label(false)?>
+                </h6>
                 <br>
                 <div class="btn-group">
                     <button type="button" class="btn btn-info"><a style="color: black" title="Позвонить"
-                                                                  href="tel:+38 067 636 72 47">+38 067 636 72 47</a>
+                                                                  href="#">
+                            <?= $form->field($tour_prices_block_form, 'btn_first_text')->textInput([
+                                'value'=>$tour_prices_block->btn_first_text,
+                                'style'=>'text-align:center;color:black;font-size:20px',
+                            ])->label(false)?>
+                        </a>
                     </button>
                     <button type="button" class="btn btn-default"><a style="color: black" title="Позвонить"
-                                                                     href="tel:+38 050 270 88 32">+38 050 270 88 32</a>
+                                                                     href="#">
+                            <?= $form->field($tour_prices_block_form, 'btn_second_text')->textInput([
+                                'value'=>$tour_prices_block->btn_second_text,
+                                'style'=>'text-align:center;color:black;font-size:20px',
+                            ])->label(false)?>
                     </button>
                 </div>
             </div>
+
         </div>
+        <?=Html::submitButton('Сохранить изменения', ['class'=>'btn btn-success'])?>
+        <?php ActiveForm::end();?>
         <!-- конец блока Цены -->
         <div style="width: 100%; height: 10px; background-color: black"></div>
         <!-- блок Контакты -->
-        <div class="cta-sub no-color">
+        <br>
+        <?php $form = ActiveForm::begin(['id'=> 'TourContactBlockForm'])?>
+        <div class="cta-sub no-color info">
             <div class="container">
 
                 <div class="cta-inner">
-                    <h1 id="contact" class="wow fadeInUp" data-wow-delay="0s">Контакты</h1>
+                    <h1 id="contacts" class="wow fadeInUp" data-wow-delay="0s">
+                        <?= $form->field($tour_contact_block_form, 'title_big_head')->textInput([
+                            'value'=>$tour_contact_block->title_big_head,
+                            'style'=>'text-align:center;color:black;font-size:20px',
+                        ])->label(false)?>
+                    </h1>
                     <br>
-                    <br>
-                    <br>
-                    <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">Связаться с
-                        нашими консультантами, Вы можете любым удобным для Вас способом</h3>
+                    <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">
+                        <?= $form->field($tour_contact_block_form, 'text_head')->textInput([
+                            'value'=>$tour_contact_block->text_head,
+                            'style'=>'text-align:center;color:black;font-size:16px',
+                        ])->label(false)?>
+                    </h3>
                     <br>
 
                     <hr>
-                    <br>
-                    <br>
+
                     <div class="row" style="margin-left: 5px">
                         <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="viber://chat?number=+380676367247" class="thumbnail ">
                                 <img src="/tours/images/viber-logo.png" class="img-circle" alt="...">
                             </a>
-                            <p>Viber</p>
+                            <p>
+                                <?= $form->field($tour_contact_block_form, 'description_first')->textInput([
+                                    'value'=>$tour_contact_block->description_first,
+                                    'style'=>'text-align:center;color:black;font-size:16px',
+                                ])->label(false)?>
+                            </p>
                         </div>
                         <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="https://t.me/StudentWay_Ukraina" class="thumbnail">
                                 <img src="/tours/images/telegram_PNG27.png" alt="...">
                             </a>
-                            <p>Telegram</p>
+                            <p>
+                                <?= $form->field($tour_contact_block_form, 'description_second')->textInput([
+                                    'value'=>$tour_contact_block->description_second,
+                                    'style'=>'text-align:center;color:black;font-size:16px',
+                                ])->label(false)?>
+                            </p>
                         </div>
                         <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="https://m.me/studentway.ukraina?ref=w3726749" class="thumbnail">
                                 <img src="/tours/images/facebook-messenger-chat-logo.png" alt="...">
                             </a>
-                            <p>Messenger</p>
+                            <p>
+                                <?= $form->field($tour_contact_block_form, 'description_third')->textInput([
+                                    'value'=>$tour_contact_block->description_third,
+                                    'style'=>'text-align:center;color:black;font-size:16px',
+                                ])->label(false)?>
+                            </p>
                         </div>
                         <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="whatsapp://send?phone=+380968141132" class="thumbnail">
                                 <img src="/tours/images/whatsapp.png" alt="...">
                             </a>
-                            <p>Whatsapp</p>
+                            <p>
+                                <?= $form->field($tour_contact_block_form, 'description_four')->textInput([
+                                    'value'=>$tour_contact_block->description_four,
+                                    'style'=>'text-align:center;color:black;font-size:16px',
+                                ])->label(false)?>
+                            </p>
                         </div>
                         <div class="col-xs-6 col-md-2 contact-button" style="width: 230px">
                             <a href="https://www.instagram.com/studentway_ukraina/" class="thumbnail">
                                 <img src="/tours/images/instagram-icon.png" alt="...">
                             </a>
-                            <p>Instagram</p>
+                            <p>
+                                <?= $form->field($tour_contact_block_form, 'description_five')->textInput([
+                                    'value'=>$tour_contact_block->description_five,
+                                    'style'=>'text-align:center;color:black;font-size:16px',
+                                ])->label(false)?>
+                            </p>
                         </div>
                     </div>
                     <hr>
                     <br>
                     <br>
 
-                    <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">Вы также можете
-                        позвонить по номерам:</h3>
+                    <h3 style="font-size: 20px; color: white" class="wow fadeInUp" data-wow-delay="0s">
+                        <?= $form->field($tour_contact_block_form, 'text_footer')->textInput([
+                            'value'=>$tour_contact_block->text_footer,
+                            'style'=>'text-align:center;color:black;font-size:20px',
+                        ])->label(false)?>
+                    </h3>
                     <br>
                     <br>
                     <br>
                     <div class="row">
 
                         <div class="col-md-6"><h1><a style="color: white" title="Позвонить"
-                                                     href="tel:+38 067 636 72 47">+38 067 636 72 47</a></h1></div>
+                                                     href="#">
+                                    <?= $form->field($tour_contact_block_form, 'link_phone_first')->textInput([
+                                        'value'=>$tour_contact_block->link_phone_first,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?>
+                                </a></h1></div>
                         <div class="col-md-6"><h1><a style="color: white" title="Позвонить"
-                                                     href="tel:+38 050 270 88 32">+38 050 270 88 32</a></h1></div>
+                                                     href="#">
+                                    <?= $form->field($tour_contact_block_form, 'link_phone_second')->textInput([
+                                        'value'=>$tour_contact_block->link_phone_second,
+                                        'style'=>'text-align:center;color:black;font-size:20px',
+                                    ])->label(false)?>
+                                </a></h1></div>
 
                     </div>
                 </div>
 
             </div>
         </div>
+        <?=Html::submitButton('Сохранить изменения', ['class'=>'btn btn-success'])?>
+        <?php ActiveForm::end();?>
         <!-- конец блока Контакты -->
+        <div style="width: 100%; height: 10px; background-color: black"></div>
+        <!--блок Футер-->
+<?php $form = ActiveForm::begin(['id'=> 'TourFooterBlockForm'])?>
+        <div>
+            <br>
+            <div class="container info">
+                <div>
+                    <h1>
+                        <?= $form->field($tour_footer_block_form, 'title_first')->textInput([
+                            'value'=>$tour_footer_block->title_first,
+                            'style'=>'text-align:center;color:black;font-size:25px',
+                        ])->label(false)?>
+                    </h1>
+                    <p>
+                        <?= $form->field($tour_footer_block_form, 'description_first')->textarea([
+                            'value'=>$tour_footer_block->description_first,
+                            'style'=>'color:black;font-size:15px',
+                            'rows'=>3,
+                        ])->label(false)?>
+                    </p>
+
+                </div>
+                <div>
+                    <h1>
+                        <?= $form->field($tour_footer_block_form, 'title_second')->textInput([
+                            'value'=>$tour_footer_block->title_second,
+                            'style'=>'text-align:center;color:black;font-size:25px',
+                        ])->label(false)?>
+                    </h1>
+                    <ul>
+                        <li>
+
+                            <?= $form->field($tour_footer_block_form, 'href_link_first')->textInput([
+                                'value'=>$tour_footer_block->href_link_first,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label()?>
+                            <?= $form->field($tour_footer_block_form, 'name_link_first')->textInput([
+                                    'value'=>$tour_footer_block->name_link_first,
+                                    'style'=>'text-align:center;color:black;font-size:25px',
+                                ])->label()?>
+                        </li>
+                        <li>
+                            <?= $form->field($tour_footer_block_form, 'href_link_second')->textInput([
+                                'value'=>$tour_footer_block->href_link_second,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label()?>
+                            <?= $form->field($tour_footer_block_form, 'name_link_second')->textInput([
+                                'value'=>$tour_footer_block->name_link_second,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label()?>
+                        </li>
+                        <li>
+                            <?= $form->field($tour_footer_block_form, 'href_link_third')->textInput([
+                                'value'=>$tour_footer_block->href_link_third,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label()?>
+                            <?= $form->field($tour_footer_block_form, 'name_link_third')->textInput([
+                                'value'=>$tour_footer_block->name_link_third,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label()?>
+                        </li>
+                        <li>
+                            <?= $form->field($tour_footer_block_form, 'href_link_four')->textInput([
+                                'value'=>$tour_footer_block->href_link_four,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label()?>
+                            <?= $form->field($tour_footer_block_form, 'name_link_four')->textInput([
+                                'value'=>$tour_footer_block->name_link_four,
+                                'style'=>'text-align:center;color:black;font-size:25px',
+                            ])->label()?>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>
+                        <?= $form->field($tour_footer_block_form, 'title_third')->textInput([
+                            'value'=>$tour_footer_block->title_third,
+                            'style'=>'text-align:center;color:black;font-size:25px',
+                        ])->label(false)?>
+                    </h1>
+                    <p>
+                        <?= $form->field($tour_footer_block_form, 'description_third')->textarea([
+                            'value'=>$tour_footer_block->description_third,
+                            'style'=>'color:black;font-size:15px',
+                            'rows'=>5,
+                        ])->label(false)?>
+                    </p>
+                    <a href="#">
+                        <?= $form->field($tour_footer_block_form, 'link_footer')->textInput([
+                            'value'=>$tour_footer_block->link_footer,
+                            'style'=>'text-align:center;color:black;font-size:20px',
+                        ])->label(false)?>
+                    </a> </div>
+            </div>
+        </div>
+<?=Html::submitButton('Сохранить изменения', ['class'=>'btn btn-success'])?>
+<?php ActiveForm::end();?>
+<!--конец блока Футер-->

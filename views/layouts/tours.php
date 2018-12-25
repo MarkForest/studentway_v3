@@ -21,26 +21,30 @@ ToursAsset::register($this);
 <div class="footer" >
     <div class="container">
         <div class="col-md-5 contact">
-            <h1>О нас</h1>
-            <p> Мы - эксперты в сфере образования, туризма, страхования, визовых вопросов и работаем в команде уже более 15 лет.
-                Специализируемся на помощи студентам, которые хотят обучаться в в ближних странах Евросоюза - Польше, Чехии, Германии как в государственных, так и в приватных учебных заведениях</p>
+            <h1>
+                <?=$this->params['footer']['title_first']?>
+            </h1>
+            <p>
+                <?=$this->params['footer']['description_first']?>
+            </p>
 
         </div>
         <div class="col-md-2 contact footer-menu">
-            <h1>Social</h1>
+            <h1><?=$this->params['footer']['title_second']?></h1>
             <ul>
-                <li><a href="https://www.facebook.com/studentway.ukraina/">Facebook</a></li>
-                <li><a href="https://twitter.com/StudentwayU">Twitter</a></li>
-                <li><a href="https://www.instagram.com/studentway_ukraina/">Instagram</a></li>
-                <li><a href="https://web.telegram.org/#/im?p=@studentwaypl">Telegram</a></li>
+                <li><a href="<?=$this->params['footer']['href_link_first']?>"><?=$this->params['footer']['name_link_first']?></a></li>
+                <li><a href="<?=$this->params['footer']['href_link_second']?>"><?=$this->params['footer']['name_link_second']?></a></li>
+                <li><a href="<?=$this->params['footer']['href_link_third']?>"><?=$this->params['footer']['name_link_third']?></a></li>
+                <li><a href="<?=$this->params['footer']['href_link_four']?>"><?=$this->params['footer']['name_link_four']?></a></li>
             </ul>
         </div>
         <div class="col-md-5 contact">
-            <h1>Контакты</h1>
-            <p> 49050, г. Днепр, пр-т Гагарина, 115, офис 44 </p>
-            <p> Telephone: +38 097 113 76 29, +38 096 814 11 32</p>
-            <p> Fax: +38 056 732 40 55</p>
-            <a href="mailto:support@gmail.com">studentway@ua.fm</a> </div>
+            <h1>
+                <?=$this->params['footer']['title_third']?>
+
+            </h1>
+            <p><?=$this->params['footer']['description_third']?></p>
+            <a href="mailto:support@gmail.com"><?=$this->params['footer']['link_footer']?></a> </div>
     </div>
 </div>
 <?php $this->endBody() ?>

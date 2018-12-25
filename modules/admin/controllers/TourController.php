@@ -11,23 +11,27 @@ namespace app\modules\admin\controllers;
 
 use app\models\tour\TourAboutUniversityBlock;
 use app\models\tour\TourAboutUsBlock;
+use app\models\tour\TourContactBlock;
 use app\models\tour\TourFirstBlock;
+use app\models\tour\TourFooterBlock;
 use app\models\tour\TourHaveQuestionsBlock;
 use app\models\tour\TourHead;
 use app\models\tour\TourHeadMenus;
-
-
 use app\models\tour\TourInfoBlock;
 use app\models\tour\TourOurServicesBlock;
+use app\models\tour\TourPricesBlock;
 use app\models\tour\TourQuestionsBlock;
 use app\models\tour\TourReviewBlock;
 use app\modules\admin\models\tour\TourAboutUniversityBlockForm;
 use app\modules\admin\models\tour\TourAboutUsBlockForm;
+use app\modules\admin\models\tour\TourContactBlockForm;
 use app\modules\admin\models\tour\TourFirstBlockForm;
+use app\modules\admin\models\tour\TourFooterBlockForm;
 use app\modules\admin\models\tour\TourHaveQuestionsBlockForm;
 use app\modules\admin\models\tour\TourHeadForm;
 use app\modules\admin\models\tour\TourInfoBlockForm;
 use app\modules\admin\models\tour\TourOurServicesBlockForm;
+use app\modules\admin\models\tour\TourPricesBlockForm;
 use app\modules\admin\models\tour\TourQuestionsBlockForm;
 use app\modules\admin\models\tour\TourReviewBlockForm;
 use Yii;
@@ -73,7 +77,15 @@ class TourController extends Controller
         //Review
         $tour_review_block = TourReviewBlock::findOne(['id'=>$id]);
         $tour_review_block_form = new TourReviewBlockForm();
-
+        //Prices
+        $tour_prices_block = TourPricesBlock::findOne(['id'=>$id]);
+        $tour_prices_block_form = new TourPricesBlockForm();
+        //Contact
+        $tour_contact_block = TourContactBlock::findOne(['id'=>$id]);
+        $tour_contact_block_form = new TourContactBlockForm();
+        //Footer
+        $tour_footer_block = TourFooterBlock::findOne(['id'=>$id]);
+        $tour_footer_block_form = new TourFooterBlockForm();
         return $this->render('index', [
             'tour_head' => $tour_head,
             'tour_head_form' => $tour_head_form,
@@ -102,6 +114,15 @@ class TourController extends Controller
             ///////////////////////////////////
             'tour_review_block' => $tour_review_block,
             'tour_review_block_form' => $tour_review_block_form,
+            ///////////////////////////////////
+            'tour_prices_block' => $tour_prices_block,
+            'tour_prices_block_form' => $tour_prices_block_form,
+            ///////////////////////////////////
+            'tour_contact_block' => $tour_contact_block,
+            'tour_contact_block_form' => $tour_contact_block_form,
+            ///////////////////////////////////
+            'tour_footer_block' => $tour_footer_block,
+            'tour_footer_block_form' => $tour_footer_block_form,
         ]);
     }
 
@@ -120,7 +141,6 @@ class TourController extends Controller
             return ($tourHeadForm->validate() && $tourHeadForm->saveData());
         }
     }
-
     public function actionSaveFirstBlock()
     {
         $tourFirstBlockForm = new TourFirstBlockForm();
@@ -132,7 +152,6 @@ class TourController extends Controller
             return ($tourFirstBlockForm->validate() && $tourFirstBlockForm->saveData());
         }
     }
-
     public function actionSaveInfoBlock()
     {
         $tourInfoBlockForm = new TourInfoBlockForm();
@@ -157,7 +176,6 @@ class TourController extends Controller
             return ($tourInfoBlockForm->validate() && $tourInfoBlockForm->saveData());
         }
     }
-
     public function actionSaveAboutUniversityBlock()
     {
         $tourAboutUniversityBlockForm = new TourAboutUniversityBlockForm();
@@ -184,7 +202,6 @@ class TourController extends Controller
             return ($tourAboutUniversityBlockForm->validate() && $tourAboutUniversityBlockForm->saveData());
         }
     }
-
     public function actionSaveOurServicesBlock()
     {
         $tourOurServicesBlockForm = new TourOurServicesBlockForm();
@@ -210,7 +227,6 @@ class TourController extends Controller
             return ($tourOurServicesBlockForm->validate() && $tourOurServicesBlockForm->saveData());
         }
     }
-
     public function actionSaveAboutUsBlock()
     {
         $tourAboutUsBlockForm = new TourAboutUsBlockForm();
@@ -294,6 +310,71 @@ class TourController extends Controller
 
             Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourReviewBlockForm->validate() && $tourReviewBlockForm->saveData());
+        }
+    }
+    public function actionSavePricesBlock()
+    {
+        $tourPricesBlockForm = new TourPricesBlockForm();
+        if (Yii::$app->request->isAjax) {
+            $tourPricesBlockForm->title_big_head = $_POST['TourPricesBlockForm']['title_big_head'];
+            $tourPricesBlockForm->title_first = $_POST['TourPricesBlockForm']['title_first'];
+            $tourPricesBlockForm->price_first = $_POST['TourPricesBlockForm']['price_first'];
+            $tourPricesBlockForm->btn_rate_first = $_POST['TourPricesBlockForm']['btn_rate_first'];
+            $tourPricesBlockForm->little_text_first = $_POST['TourPricesBlockForm']['little_text_first'];
+            $tourPricesBlockForm->title_second = $_POST['TourPricesBlockForm']['title_second'];
+            $tourPricesBlockForm->price_second = $_POST['TourPricesBlockForm']['price_second'];
+            $tourPricesBlockForm->btn_rate_second = $_POST['TourPricesBlockForm']['btn_rate_second'];
+            $tourPricesBlockForm->little_text_second = $_POST['TourPricesBlockForm']['little_text_second'];
+            $tourPricesBlockForm->text_footer = $_POST['TourPricesBlockForm']['text_footer'];
+            $tourPricesBlockForm->btn_first_text = $_POST['TourPricesBlockForm']['btn_first_text'];
+            $tourPricesBlockForm->btn_second_text = $_POST['TourPricesBlockForm']['btn_second_text'];
+
+            Yii::$app->session->setFlash('success', 'Изменения сохранены');
+            return ($tourPricesBlockForm->validate() && $tourPricesBlockForm->saveData());
+        }
+    }
+    public function actionSaveContactBlock()
+    {
+        $tourContactBlockForm = new TourContactBlockForm();
+        if (Yii::$app->request->isAjax) {
+            $tourContactBlockForm->title_big_head = $_POST['TourContactBlockForm']['title_big_head'];
+            $tourContactBlockForm->text_head = $_POST['TourContactBlockForm']['text_head'];
+            $tourContactBlockForm->description_first = $_POST['TourContactBlockForm']['description_first'];
+            $tourContactBlockForm->description_second = $_POST['TourContactBlockForm']['description_second'];
+            $tourContactBlockForm->description_third = $_POST['TourContactBlockForm']['description_third'];
+            $tourContactBlockForm->description_four = $_POST['TourContactBlockForm']['description_four'];
+            $tourContactBlockForm->description_five = $_POST['TourContactBlockForm']['description_five'];
+            $tourContactBlockForm->text_footer = $_POST['TourContactBlockForm']['text_footer'];
+            $tourContactBlockForm->link_phone_first = $_POST['TourContactBlockForm']['link_phone_first'];
+            $tourContactBlockForm->link_phone_second = $_POST['TourContactBlockForm']['link_phone_second'];
+
+
+            Yii::$app->session->setFlash('success', 'Изменения сохранены');
+            return ($tourContactBlockForm->validate() && $tourContactBlockForm->saveData());
+        }
+    }
+    public function actionSaveFooterBlock()
+    {
+        $tourFooterBlockForm = new TourFooterBlockForm();
+        if (Yii::$app->request->isAjax) {
+            $tourFooterBlockForm->title_first = $_POST['TourFooterBlockForm']['title_first'];
+            $tourFooterBlockForm->description_first = $_POST['TourFooterBlockForm']['description_first'];
+            $tourFooterBlockForm->title_second = $_POST['TourFooterBlockForm']['title_second'];
+            $tourFooterBlockForm->name_link_first = $_POST['TourFooterBlockForm']['name_link_first'];
+            $tourFooterBlockForm->href_link_first = $_POST['TourFooterBlockForm']['href_link_first'];
+            $tourFooterBlockForm->name_link_second = $_POST['TourFooterBlockForm']['name_link_second'];
+            $tourFooterBlockForm->href_link_second = $_POST['TourFooterBlockForm']['href_link_second'];
+            $tourFooterBlockForm->name_link_third = $_POST['TourFooterBlockForm']['name_link_third'];
+            $tourFooterBlockForm->href_link_third = $_POST['TourFooterBlockForm']['href_link_third'];
+            $tourFooterBlockForm->name_link_four = $_POST['TourFooterBlockForm']['name_link_four'];
+            $tourFooterBlockForm->href_link_four = $_POST['TourFooterBlockForm']['href_link_four'];
+            $tourFooterBlockForm->title_third = $_POST['TourFooterBlockForm']['title_third'];
+            $tourFooterBlockForm->description_third = $_POST['TourFooterBlockForm']['description_third'];
+            $tourFooterBlockForm->link_footer = $_POST['TourFooterBlockForm']['link_footer'];
+
+
+            Yii::$app->session->setFlash('success', 'Изменения сохранены');
+            return ($tourFooterBlockForm->validate() && $tourFooterBlockForm->saveData());
         }
     }
 }

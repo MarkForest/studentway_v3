@@ -431,4 +431,10 @@ class ImagesController extends Controller
             'reg'=>$reg,
         ]);
     }
+
+    public function actionImageTour()
+    {
+
+        return $this->render('tour');
+    }
 }

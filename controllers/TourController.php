@@ -11,10 +11,13 @@ namespace app\controllers;
 
 use app\models\tour\TourAboutUniversityBlock;
 use app\models\tour\TourAboutUsBlock;
+use app\models\tour\TourContactBlock;
 use app\models\tour\TourFirstBlock;
+use app\models\tour\TourFooterBlock;
 use app\models\tour\TourHaveQuestionsBlock;
 use app\models\tour\TourInfoBlock;
 use app\models\tour\TourOurServicesBlock;
+use app\models\tour\TourPricesBlock;
 use app\models\tour\TourQuestionsBlock;
 use app\models\tour\TourReviewBlock;
 use Yii;
@@ -50,6 +53,13 @@ class TourController extends Controller
         $tour_have_questions_block = TourHaveQuestionsBlock::findOne(['id'=>$id]);
         //review
         $tour_review_block = TourReviewBlock::findOne(['id'=>$id]);
+        //prices
+        $tour_prices_block = TourPricesBlock::findOne(['id'=>$id]);
+        //contact
+        $tour_contact_block = TourContactBlock::findOne(['id'=>$id]);
+        //footer
+        $tour_footer_block = TourFooterBlock::findOne(['id'=>$id]);
+        $this->view->params['footer'] = $tour_footer_block;
         return $this->render('index', [
             'tour_head'=>$tour_head,
             'tour_head_menus'=>$tour_head_menus,
@@ -61,6 +71,9 @@ class TourController extends Controller
             'tour_questions_block'=>$tour_questions_block,
             'tour_have_questions_block'=>$tour_have_questions_block,
             'tour_review_block'=>$tour_review_block,
+            'tour_prices_block'=>$tour_prices_block,
+            'tour_contact_block'=>$tour_contact_block,
+            'tour_footer_block'=>$tour_footer_block,
         ]);
     }
 
