@@ -49,8 +49,6 @@ class TourOurServicesBlockForm extends Model
         $tour_our_services_block->btn_first_text = $this->btn_first_text;
         $tour_our_services_block->btn_second_text = $this->btn_second_text;
 
-        $isSaved = false;
-
-        return ($tour_our_services_block->save(false) && $isSaved);
+        return $tour_our_services_block->save(false);
     }
 }

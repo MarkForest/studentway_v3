@@ -24,8 +24,6 @@ class TourHaveQuestionsBlockForm extends Model
         $tour_have_questions_block->title_big_head = $this->title_big_head;
         $tour_have_questions_block->btn_message_text = $this->btn_message_text;
 
-        $isSaved = false;
-
-        return ($tour_have_questions_block->save(false) && $isSaved);
+        return $tour_have_questions_block->save(false);
     }
 }

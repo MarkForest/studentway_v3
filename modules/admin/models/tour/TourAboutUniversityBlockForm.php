@@ -55,8 +55,6 @@ class TourAboutUniversityBlockForm extends Model
         $tour_about_university_block->btn_first_text = $this->btn_first_text;
         $tour_about_university_block->btn_second_text = $this->btn_second_text;
 
-        $isSaved = false;
-
-        return ($tour_about_university_block->save(false) && $isSaved);
+        return $tour_about_university_block->save(false);
     }
 }

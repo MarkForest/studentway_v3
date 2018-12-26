@@ -10,10 +10,6 @@ $this->title = 'Tours | Austria';
     <?php $form = ActiveForm::begin(['id'=>'TourHeadForm']);?>
     <?=$form->field($tour_head_form,'key_id')->textInput(['value'=>$tour_head->id,'class'=>'hidden'])->label(false)?>
     <?php if( Yii::$app->session->hasFlash('success') ): ?>
-        <div class="container alert alert-success" role="alert">
-            <button type="button" style="width: 50%" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <?php echo Yii::$app->session->getFlash('success'); ?>
-        </div>
     <?php endif;?>
     <div style="background-color: #00b3ee; margin-top: -25px">
 

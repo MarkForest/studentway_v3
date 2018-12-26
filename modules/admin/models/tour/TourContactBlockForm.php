@@ -44,8 +44,6 @@ class TourContactBlockForm extends Model
         $tour_contact_block->link_phone_first = $this->link_phone_first;
         $tour_contact_block->link_phone_second = $this->link_phone_second;
 
-        $isSaved = false;
-
-        return ($tour_contact_block->save(false) && $isSaved);
+        return $tour_contact_block->save(false);
     }
 }

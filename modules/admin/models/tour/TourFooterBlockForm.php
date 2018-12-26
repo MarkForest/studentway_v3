@@ -53,8 +53,6 @@ class TourFooterBlockForm extends Model
         $tour_footer_block->description_third = $this->description_third;
         $tour_footer_block->link_footer = $this->link_footer;
 
-        $isSaved = false;
-
-        return ($tour_footer_block->save(false) && $isSaved);
+        return $tour_footer_block->save(false);
     }
 }

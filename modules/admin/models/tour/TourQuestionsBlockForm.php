@@ -55,8 +55,6 @@ class TourQuestionsBlockForm extends Model
         $tour_questions_block->btn_first_text = $this->btn_first_text;
         $tour_questions_block->btn_second_text = $this->btn_second_text;
 
-        $isSaved = false;
-
-        return ($tour_questions_block->save(false) && $isSaved);
+        return $tour_questions_block->save(false);
     }
 }

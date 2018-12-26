@@ -49,8 +49,6 @@ class TourPricesBlockForm extends Model
         $tour_prices_block->btn_first_text = $this->btn_first_text;
         $tour_prices_block->btn_second_text = $this->btn_second_text;
 
-        $isSaved = false;
-
-        return ($tour_prices_block->save(false) && $isSaved);
+        return $tour_prices_block->save(false);
     }
 }

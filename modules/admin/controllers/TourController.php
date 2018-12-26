@@ -137,7 +137,6 @@ class TourController extends Controller
             $tourHeadForm->phone_number = $_POST['TourHeadForm']['phone_number'];
             $tourHeadForm->key_id = $_POST['TourHeadForm']['key_id'];
             $tourHeadForm->tour_menus = $_POST['TourHeadForm']['tour_menus'];
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourHeadForm->validate() && $tourHeadForm->saveData());
         }
     }
@@ -148,7 +147,6 @@ class TourController extends Controller
             $tourFirstBlockForm->title = $_POST['TourFirstBlockForm']['title'];
             $tourFirstBlockForm->description = $_POST['TourFirstBlockForm']['description'];
             $tourFirstBlockForm->btn_message_text = $_POST['TourFirstBlockForm']['btn_message_text'];
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourFirstBlockForm->validate() && $tourFirstBlockForm->saveData());
         }
     }
@@ -172,7 +170,6 @@ class TourController extends Controller
             $tourInfoBlockForm->btn_first_text = $_POST['TourInfoBlockForm']['btn_first_text'];
             $tourInfoBlockForm->btn_second_text = $_POST['TourInfoBlockForm']['btn_second_text'];
             $tourInfoBlockForm->text_footer = $_POST['TourInfoBlockForm']['text_footer'];
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourInfoBlockForm->validate() && $tourInfoBlockForm->saveData());
         }
     }
@@ -198,7 +195,6 @@ class TourController extends Controller
             $tourAboutUniversityBlockForm->btn_message_text = $_POST['TourAboutUniversityBlockForm']['btn_message_text'];
             $tourAboutUniversityBlockForm->btn_first_text = $_POST['TourAboutUniversityBlockForm']['btn_first_text'];
             $tourAboutUniversityBlockForm->btn_second_text = $_POST['TourAboutUniversityBlockForm']['btn_second_text'];
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourAboutUniversityBlockForm->validate() && $tourAboutUniversityBlockForm->saveData());
         }
     }
@@ -222,8 +218,6 @@ class TourController extends Controller
             $tourOurServicesBlockForm->title_four = $_POST['TourOurServicesBlockForm']['title_four'];
             $tourOurServicesBlockForm->btn_first_text = $_POST['TourOurServicesBlockForm']['btn_first_text'];
             $tourOurServicesBlockForm->btn_second_text = $_POST['TourOurServicesBlockForm']['btn_second_text'];
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourOurServicesBlockForm->validate() && $tourOurServicesBlockForm->saveData());
         }
     }
@@ -247,8 +241,6 @@ class TourController extends Controller
             $tourAboutUsBlockForm->text_footer = $_POST['TourAboutUsBlockForm']['text_footer'];
             $tourAboutUsBlockForm->btn_first_text = $_POST['TourAboutUsBlockForm']['btn_first_text'];
             $tourAboutUsBlockForm->btn_second_text = $_POST['TourAboutUsBlockForm']['btn_second_text'];
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourAboutUsBlockForm->validate() && $tourAboutUsBlockForm->saveData());
         }
     }
@@ -269,12 +261,9 @@ class TourController extends Controller
             $tourQuestionsBlockForm->description_five = $_POST['TourQuestionsBlockForm']['description_five'];
             $tourQuestionsBlockForm->title_six = $_POST['TourQuestionsBlockForm']['title_six'];
             $tourQuestionsBlockForm->description_six = $_POST['TourQuestionsBlockForm']['description_six'];
-
             $tourQuestionsBlockForm->text_footer = $_POST['TourQuestionsBlockForm']['text_footer'];
             $tourQuestionsBlockForm->btn_first_text = $_POST['TourQuestionsBlockForm']['btn_first_text'];
             $tourQuestionsBlockForm->btn_second_text = $_POST['TourQuestionsBlockForm']['btn_second_text'];
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourQuestionsBlockForm->validate() && $tourQuestionsBlockForm->saveData());
         }
     }
@@ -284,8 +273,6 @@ class TourController extends Controller
         if (Yii::$app->request->isAjax) {
             $tourHaveQuestionsBlockForm->title_big_head = $_POST['TourHaveQuestionsBlockForm']['title_big_head'];
             $tourHaveQuestionsBlockForm->btn_message_text = $_POST['TourHaveQuestionsBlockForm']['btn_message_text'];
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourHaveQuestionsBlockForm->validate() && $tourHaveQuestionsBlockForm->saveData());
         }
     }
@@ -303,12 +290,9 @@ class TourController extends Controller
             $tourReviewBlockForm->name_four = $_POST['TourReviewBlockForm']['name_four'];
             $tourReviewBlockForm->text_review_five = $_POST['TourReviewBlockForm']['text_review_five'];
             $tourReviewBlockForm->name_five = $_POST['TourReviewBlockForm']['name_five'];
-
             $tourReviewBlockForm->text_footer = $_POST['TourReviewBlockForm']['text_footer'];
             $tourReviewBlockForm->btn_first_text = $_POST['TourReviewBlockForm']['btn_first_text'];
             $tourReviewBlockForm->btn_second_text = $_POST['TourReviewBlockForm']['btn_second_text'];
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourReviewBlockForm->validate() && $tourReviewBlockForm->saveData());
         }
     }
@@ -328,8 +312,6 @@ class TourController extends Controller
             $tourPricesBlockForm->text_footer = $_POST['TourPricesBlockForm']['text_footer'];
             $tourPricesBlockForm->btn_first_text = $_POST['TourPricesBlockForm']['btn_first_text'];
             $tourPricesBlockForm->btn_second_text = $_POST['TourPricesBlockForm']['btn_second_text'];
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourPricesBlockForm->validate() && $tourPricesBlockForm->saveData());
         }
     }
@@ -347,9 +329,6 @@ class TourController extends Controller
             $tourContactBlockForm->text_footer = $_POST['TourContactBlockForm']['text_footer'];
             $tourContactBlockForm->link_phone_first = $_POST['TourContactBlockForm']['link_phone_first'];
             $tourContactBlockForm->link_phone_second = $_POST['TourContactBlockForm']['link_phone_second'];
-
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourContactBlockForm->validate() && $tourContactBlockForm->saveData());
         }
     }
@@ -371,9 +350,6 @@ class TourController extends Controller
             $tourFooterBlockForm->title_third = $_POST['TourFooterBlockForm']['title_third'];
             $tourFooterBlockForm->description_third = $_POST['TourFooterBlockForm']['description_third'];
             $tourFooterBlockForm->link_footer = $_POST['TourFooterBlockForm']['link_footer'];
-
-
-            Yii::$app->session->setFlash('success', 'Изменения сохранены');
             return ($tourFooterBlockForm->validate() && $tourFooterBlockForm->saveData());
         }
     }
