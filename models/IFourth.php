@@ -21,7 +21,7 @@ class IFourth extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iFourth';
+        return 'ifourth';
     }
 
     /**

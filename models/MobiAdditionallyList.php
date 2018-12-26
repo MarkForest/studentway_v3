@@ -21,7 +21,7 @@ class MobiAdditionallyList extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'MobiAdditionally_list';
+        return 'mobiadditionally_list';
     }
 
     /**

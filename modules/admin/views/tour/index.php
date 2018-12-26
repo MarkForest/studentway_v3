@@ -1516,3 +1516,11 @@ $this->title = 'Tours | Austria';
 <?=Html::submitButton('Сохранить изменения', ['class'=>'btn btn-success'])?>
 <?php ActiveForm::end();?>
 <!--конец блока Футер-->
+
+        <div class="alert alert-success message-success">
+            Изменения сохранены успешно!
+        </div>
+
+        <div class="alert alert-danger message-danger">
+            Изменения не со хранены, что-то пошло не так!
+        </div>

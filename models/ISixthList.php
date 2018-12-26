@@ -26,7 +26,7 @@ class ISixthList extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iSixth_list';
+        return 'isixth_list';
     }
 
     /**

@@ -21,7 +21,7 @@ class IFirst extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iFirst';
+        return 'ifirst';
     }
 
     /**

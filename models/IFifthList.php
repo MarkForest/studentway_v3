@@ -32,7 +32,7 @@ class IFifthList extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iFifth_list';
+        return 'ififth_list';
     }
 
     /**

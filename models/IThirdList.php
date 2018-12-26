@@ -28,7 +28,7 @@ class IThirdList extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iThird_list';
+        return 'ithird_list';
     }
 
     /**

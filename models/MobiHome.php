@@ -25,7 +25,7 @@ class MobiHome extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'MobiHome';
+        return 'mobihome';
     }
 
     /**

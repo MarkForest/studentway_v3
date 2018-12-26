@@ -29,7 +29,7 @@ class MobiExploreLevels extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'MobiExploreLevels';
+        return 'mobiexplorelevels';
     }
 
     /**

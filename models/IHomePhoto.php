@@ -20,7 +20,7 @@ class IHomePhoto extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iHome_photo';
+        return 'ihome_photo';
     }
 
     /**

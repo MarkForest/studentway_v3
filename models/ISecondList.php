@@ -27,7 +27,7 @@ class ISecondList extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iSecond_list';
+        return 'isecond_list';
     }
 
     /**

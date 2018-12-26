@@ -21,7 +21,7 @@ class IMessageContact extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iMessage_contact';
+        return 'imessage_contact';
     }
 
     /**

@@ -20,7 +20,7 @@ class ISeventhListPhoto extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iSeventh_list_photo';
+        return 'iseventh_list_photo';
     }
 
     /**

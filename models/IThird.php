@@ -21,7 +21,7 @@ class IThird extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iThird';
+        return 'ithird';
     }
 
     /**

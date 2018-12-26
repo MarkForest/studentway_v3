@@ -31,8 +31,7 @@ class TourFirstBlockForm extends Model
         $tour_first_block->title = $this->title;
         $tour_first_block->description = $this->description;
         $tour_first_block->btn_message_text = $this->btn_message_text;
-        $isSaved = false;
 
-        return ($tour_first_block->save(false) && $isSaved);
+        return ($tour_first_block->save(false));
     }
 }

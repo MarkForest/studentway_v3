@@ -21,7 +21,7 @@ class IFifth extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iFifth';
+        return 'ififth';
     }
 
     /**

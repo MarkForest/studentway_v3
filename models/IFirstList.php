@@ -23,7 +23,7 @@ class IFirstList extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iFirst_list';
+        return 'ifirst_list';
     }
 
     /**

@@ -16,7 +16,7 @@ $this->title = 'Tours | Austria';
                             data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
                     </button>
-                    <a href="#main" style="color: white; text-decoration: none;">
+                    <a href="<?=\yii\helpers\Url::toRoute('/site/index')?>" style="color: white; text-decoration: none;">
                         <p style=" font-family: 'Open Sans', sans-serif "><?= $tour_head['logo_text'] ?></p>
                         <p style="font-size: 12px; margin-top: 5px "><?= $tour_head['phone_number'] ?></p>
                     </a>

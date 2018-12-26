@@ -20,7 +20,7 @@ class ILevelMessage extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iLevel_message';
+        return 'ilevel_message';
     }
 
     /**

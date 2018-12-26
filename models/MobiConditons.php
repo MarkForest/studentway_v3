@@ -25,7 +25,7 @@ class MobiConditons extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'MobiConditons';
+        return 'mobiconditons';
     }
 
     /**

@@ -25,7 +25,7 @@ class IHomeList extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iHome_list';
+        return 'ihome_list';
     }
 
     /**

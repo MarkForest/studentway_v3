@@ -26,7 +26,7 @@ class ISecond extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iSecond';
+        return 'isecond';
     }
 
     /**

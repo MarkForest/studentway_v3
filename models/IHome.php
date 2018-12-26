@@ -30,7 +30,7 @@ class IHome extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'iHome';
+        return 'ihome';
     }
 
     /**

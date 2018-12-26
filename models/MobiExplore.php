@@ -24,7 +24,7 @@ class MobiExplore extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'MobiExplore';
+        return 'mobiexplore';
     }
 
     /**
