@@ -39,7 +39,7 @@ $this->title = 'Tours | Austria';
 
     <div class="main app form" id="main">
         <!-- блок Главная-->
-        <div class="cta-sub2 no-color">
+        <div class="cta-sub no-color{" style="background-image:linear-gradient(to right, rgba(0, 174, 218, 0.5), rgba(0, 174, 218, 0.9)), url(/tours/images/<?=$tour_first_img_block->image?>)">
             <div class="container nopadding">
                 <div class="col-md-12">
                     <div class="hero-content text-center">
@@ -132,6 +132,8 @@ $this->title = 'Tours | Austria';
         <!-- конец блока Инфо -->
 
         <!-- блок Про Университеты  -->
+
+
         <div class="app-features text-center" id="about_universiti">
             <div class="container">
                 <h1 class="wow fadeInDown"
@@ -144,7 +146,7 @@ $this->title = 'Tours | Austria';
 
                             <div class="col-md-5 wow fadeInDown" data-wow-delay="0.2s">
                                 <div class="feature-single">
-                                    <img class="img-responsive" src="/tours/images/univer1.jpg" alt="App"
+                                    <img class="img-responsive" src="/tours/images/<?= $tour_about_university_img_block[0]['image'];?>" alt="App"
                                          style="margin-bottom: 30px"/>
                                 </div>
                             </div>
@@ -160,6 +162,7 @@ $this->title = 'Tours | Austria';
                    href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskiy-universitet']) ?>">Подробнее</a>
             </div>
         </div>
+
     </div>
 
 
@@ -180,7 +183,7 @@ $this->title = 'Tours | Austria';
         </div>
         <div class="col-md-5 wow fadeInDown" data-wow-delay="0.2s">
             <div class="feature-single">
-                <img class="img-responsive" src="/tours/images/wien.jpg" alt="App"
+                <img class="img-responsive" src="/tours/images/<?= $tour_about_university_img_block[1]['image'];?>" alt="App"
                      style="margin-bottom: 15px"/>
             </div>
         </div>
@@ -190,7 +193,7 @@ $this->title = 'Tours | Austria';
     <div class="row">
         <div class="col-md-5 wow fadeInDown" data-wow-delay="0.2s">
             <div class="feature-single">
-                <img class="img-responsive" src="/tours/images/wu.jpg" alt="App"/>
+                <img class="img-responsive" src="/tours/images/<?= $tour_about_university_img_block[2]['image'];?>" alt="App"/>
             </div>
         </div>
         <div class="col-md-7 wow fadeInDown" data-wow-delay="0.2s">
@@ -210,7 +213,6 @@ $this->title = 'Tours | Austria';
 
     </div>
 </div>
-
 </div>
 <div class="row">
     <div class="col-md-12 wow fadeInDown" data-wow-delay="0.2s">
@@ -236,7 +238,7 @@ $this->title = 'Tours | Austria';
                             <div class="item active">
                                 <a target="_blank"
                                    href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskij-agrarnyij-universitet']) ?>"><img
-                                            src="/tours/images/ven-agr-univer.jpg"
+                                            src="/tours/images/<?=$tour_other_university_img_block[0]['image']?>"
                                             alt="Венский Аграрный Университет"></a>
                                 <div class="carousel-caption"
                                      style="background: linear-gradient(#e4e4e4, #ccc);width: 100%;margin-left: -300px">
@@ -246,7 +248,7 @@ $this->title = 'Tours | Austria';
                             <div class="item">
                                 <a target="_blank"
                                    href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskyy-medytsynskyy-unyversytet']) ?>"><img
-                                            src="/tours/images/venskyy-medytsynskyy-unyversytet-2.jpg"
+                                            src="/tours/images/<?=$tour_other_university_img_block[1]['image']?>"
                                             alt="Венский Медицинский Университет"></a>
                                 <div class="carousel-caption"
                                      style="background: linear-gradient(#e4e4e4, #ccc);width: 100%;margin-left: -300px">
@@ -256,7 +258,7 @@ $this->title = 'Tours | Austria';
                             <div class="item">
                                 <a target="_blank"
                                    href="<?php echo Yii::$app->urlManager->createUrl(['tour/videnskij-veterinarnij-universite']) ?>"><img
-                                            src="/tours/images/videnskij-veterinarnij-universitet-2.jpg"
+                                            src="/tours/images/<?=$tour_other_university_img_block[2]['image']?>"
                                             alt="Венский Ветеринарный Университет"></a>
                                 <div class="carousel-caption"
                                      style="background: linear-gradient(#e4e4e4, #ccc);width: 100%;margin-left: -300px">
@@ -266,7 +268,7 @@ $this->title = 'Tours | Austria';
                             <div class="item">
                                 <a target="_blank"
                                    href="<?php echo Yii::$app->urlManager->createUrl(['tour/venskiy-universitet-prikladnyh-nauk']) ?>"><img
-                                            src="/tours/images/venskiy-universitet-prikladnyh-nauk-2.jpg"
+                                            src="/tours/images/<?=$tour_other_university_img_block[3]['image']?>"
                                             alt="Венский Университет Прикладных Наук"></a>
                                 <div class="carousel-caption"
                                      style="background: linear-gradient(#e4e4e4, #ccc);width: 100%;margin-left: -300px">
@@ -276,7 +278,7 @@ $this->title = 'Tours | Austria';
                             <div class="item">
                                 <a target="_blank"
                                    href="<?php echo Yii::$app->urlManager->createUrl(['tour/coursi-nemeckogo-v-avstii']) ?>"><img
-                                            src="/tours/images/coursi-nemeckogo-v-avstii-2.jpg"
+                                            src="/tours/images/<?=$tour_other_university_img_block[4]['image']?>"
                                             alt="Курсы немецкого языка в Вене"></a>
                                 <div class="carousel-caption"
                                      style="background: linear-gradient(#e4e4e4, #ccc);width: 100%;margin-left: -300px">
@@ -326,7 +328,7 @@ $this->title = 'Tours | Austria';
 <!-- блок Наши Услуги -->
 <div class="split-features" id="our_services">
     <div class="col-md-5 col-md-offset-1 nopadding">
-        <div class="split-image"><img class="img-responsive wow fadeIn" src="/tours/images/picture1.jpg"
+        <div class="split-image"><img class="img-responsive wow fadeIn" src="/tours/images/<?=$tour_our_services_img_block->image?>"
                                       alt="Image"/></div>
     </div>
     <div class="col-md-5 nopadding">
@@ -384,14 +386,14 @@ $this->title = 'Tours | Austria';
         </div>
     </div>
     <div class="col-md-5 nopadding">
-        <div class="split-image"><img class="img-responsive wow fadeIn" src="/tours/images/Screenshot_1.jpg"
+        <div class="split-image"><img class="img-responsive wow fadeIn" src="/tours/images/<?=$tour_about_us_img_block[0]['image']?>"
                                       alt="Image"/></div>
     </div>
 </div>
 <!-- About Us Section 2-->
 <div class="split-features">
     <div class="col-md-5 col-md-offset-1 nopadding">
-        <div class="split-image"><img class="img-responsive wow fadeIn" src="/tours/images/Screenshot_2.jpg"
+        <div class="split-image"><img class="img-responsive wow fadeIn" src="/tours/images/<?=$tour_about_us_img_block[1]['image']?>"
                                       alt="Image"/></div>
     </div>
     <div class="col-md-6 nopadding">
@@ -541,7 +543,7 @@ $this->title = 'Tours | Austria';
 </div>
 <!-- конец блока Часто задаваемые вопросы -->
 <!-- блок Есть вопросы -->
-<div class="feature-sub cta-sub3">
+<div class="feature-sub cta-sub3" style="background-image:linear-gradient(to right, rgba(0, 174, 218, 0.5), rgba(0, 174, 218, 0.9)), url(/tours/images/<?=$tour_have_questions_img_block->image?>)">
     <div class="container">
         <div class="sub-inner" style="margin-left: 110px">
             <h1 class="wow fadeInUp"><?= $tour_have_questions_block['title_big_head'] ?></h1>
@@ -556,34 +558,34 @@ $this->title = 'Tours | Austria';
         <div class="col-md-10 col-md-offset-1">
             <div class="reviews owl-carousel owl-theme">
                 <div class="review-single">
-                    <img class="img-circle" src="/tours/images/customer1.png" alt="Client Testimonoal"/>
+                    <img class="img-circle" src="/tours/images/<?=$tour_review_img_block[0]['image']?>" alt="Client Testimonoal"/>
                     <div class="review-text wow fadeInUp" data-wow-delay="0.2s">
                         <p><?=$tour_review_block['text_review_first']?></p>
                         <h3><?=$tour_review_block['name_first']?></h3>
                     </div>
                 </div>
                 <div class="review-single">
-                    <img class="img-circle" src="/tours/images/customer2.png" alt="Client Testimonoal"/>
+                    <img class="img-circle" src="/tours/images/<?=$tour_review_img_block[1]['image']?>" alt="Client Testimonoal"/>
                     <div class="review-text">
                         <p><?=$tour_review_block['text_review_second']?></p>
                         <h3><?=$tour_review_block['name_second']?></h3>
                     </div>
                 </div>
-                <div class="review-single"><img class="img-circle" src="/tours/images/customer3.png"
+                <div class="review-single"><img class="img-circle" src="/tours/images/<?=$tour_review_img_block[2]['image']?>"
                                                 alt="Client Testimonoal"/>
                     <div class="review-text">
                         <p><?=$tour_review_block['text_review_third']?></p>
                         <h3><?=$tour_review_block['name_third']?></h3>
                     </div>
                 </div>
-                <div class="review-single"><img class="img-circle" src="/tours/images/customer4.png"
+                <div class="review-single"><img class="img-circle" src="/tours/images/<?=$tour_review_img_block[3]['image']?>"
                                                 alt="Client Testimonoal"/>
                     <div class="review-text">
                         <p><?=$tour_review_block['text_review_four']?></p>
                         <h3><?=$tour_review_block['name_four']?></h3>
                     </div>
                 </div>
-                <div class="review-single"><img class="img-circle" src="/tours/images/customer5.png"
+                <div class="review-single"><img class="img-circle" src="/tours/images/<?=$tour_review_img_block[4]['image']?>"
                                                 alt="Client Testimonoal"/>
                     <div class="review-text">
                         <p><?=$tour_review_block['text_review_five']?></p>
@@ -669,7 +671,7 @@ $this->title = 'Tours | Austria';
 </div>
 <!-- конец блока Цены -->
 <!-- блок Контакты -->
-<div class="cta-sub no-color">
+<div class="cta-sub no-color" style="background-image:linear-gradient(to right, rgba(0, 174, 218, 0.5), rgba(0, 174, 218, 0.9)), url(/tours/images/<?=$tour_contact_img_block->image?>)">
     <div class="container">
 
         <div class="cta-inner">

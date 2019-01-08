@@ -22,16 +22,24 @@ use app\models\IThirdListPhoto;
 use app\models\ListTeam;
 use app\models\Privilege;
 use app\models\Team;
+use app\models\tour\TourAboutUniversityImgBlock;
+use app\models\tour\TourAboutUsImgBlock;
+use app\models\tour\TourContactsImgBlock;
+use app\models\tour\TourFirstImgBlock;
+use app\models\tour\TourHaveQuestionsImgBlock;
+use app\models\tour\TourOtherUniversityImgBlock;
+use app\models\tour\TourOurServicesImgBlock;
+use app\models\tour\TourReviewImgBlock;
 use app\modules\admin\models\UploadForm;
 use Yii;
 use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\UploadedFile;
-
+define('FIRST', 1);
 class ImagesController extends Controller
 {
-    public $layout = '/image';
 
+    public $layout = '/image';
     public function actionIndex($t=null,$id=null){
 
 
@@ -432,9 +440,267 @@ class ImagesController extends Controller
         ]);
     }
 
-    public function actionImageTour()
+    public function actionImageTour($id=null, $t=null)
     {
+        $firstBlock = TourFirstImgBlock::findOne(['id'=>FIRST]);
+        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+        $reviewBlock = TourReviewImgBlock::find()->all();
+        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
 
-        return $this->render('tour');
+        $model = new UploadForm();
+
+        if (Yii::$app->request->isPost) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            $fileName = $model->upload('tours/images/');
+            if($fileName){
+                if($t=='first'){
+                    $blockFirst=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockFirst->image;
+                    $blockFirst->image = $fileName;
+                    if ($blockFirst->save(false)) {
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>$id]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+                if($t=='about_university'){
+                    $blockAboutUniversity = TourAboutUniversityImgBlock::findOne(['id'=>$id]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockAboutUniversity->image;
+                    $blockAboutUniversity->image = $fileName;
+
+                    if($blockAboutUniversity->save(false)){
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+                if($t=='aboutOtherUniversityBlock'){
+                    $blockAboutOtherUniversity = TourOtherUniversityImgBlock::findOne(['id'=>$id]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockAboutOtherUniversity->image;
+                    $blockAboutOtherUniversity->image = $fileName;
+
+                    if($blockAboutOtherUniversity->save(false)){
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+                if($t=='ourServicesBlock'){
+                    $blockOurServices = TourOurServicesImgBlock::findOne(['id'=>$id]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockOurServices->image;
+                    $blockOurServices->image = $fileName;
+
+                    if($blockOurServices->save(false)){
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+                if($t=='aboutUsBlock'){
+                    $blockAboutUs = TourAboutUsImgBlock::findOne(['id'=>$id]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockAboutUs->image;
+                    $blockAboutUs->image = $fileName;
+
+                    if($blockAboutUs->save(false)){
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+                if($t=='haveQuestionsBlock'){
+                    $blockHaveQuestions = TourHaveQuestionsImgBlock::findOne(['id'=>$id]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockHaveQuestions->image;
+                    $blockHaveQuestions->image = $fileName;
+
+                    if($blockHaveQuestions->save(false)){
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+                if($t=='reviewBlock'){
+                    $blockReview = TourReviewImgBlock::findOne(['id'=>$id]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockReview->image;
+                    $blockReview->image = $fileName;
+
+                    if($blockReview->save(false)){
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+                if($t=='contactsBlock'){
+                    $blockContacts = TourContactsImgBlock::findOne(['id'=>$id]);
+                    $currentImage = Yii::getAlias('@web'). 'tours/images/' . $blockContacts->image;
+                    $blockContacts->image = $fileName;
+
+                    if($blockContacts->save(false)){
+                        if (file_exists($currentImage))
+                            unlink($currentImage);
+                        $firstBlock=TourFirstImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUniversityBlock = TourAboutUniversityImgBlock::find()->all();
+                        $aboutOtherUniversityBlock = TourOtherUniversityImgBlock::find()->all();
+                        $ourServicesBlock = TourOurServicesImgBlock::findOne(['id'=>FIRST]);
+                        $aboutUsBlock = TourAboutUsImgBlock::find()->all();
+                        $haveQuestionsBlock = TourHaveQuestionsImgBlock::findOne(['id'=>FIRST]);
+                        $reviewBlock = TourReviewImgBlock::find()->all();
+                        $contactsBlock = TourContactsImgBlock::findOne(['id'=>FIRST]);
+                        return $this->render('tour', [
+                            'firstBlock'=>$firstBlock,
+                            'aboutUniversityBlock'=>$aboutUniversityBlock,
+                            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+                            'ourServicesBlock'=>$ourServicesBlock,
+                            'aboutUsBlock'=>$aboutUsBlock,
+                            'haveQuestionsBlock'=>$haveQuestionsBlock,
+                            'reviewBlock'=>$reviewBlock,
+                            'contactsBlock'=>$contactsBlock,
+                            'model'=>$model,
+                        ]);
+                    }
+                }
+            }
+        }
+
+        return $this->render('tour', [
+            'firstBlock'=>$firstBlock,
+            'aboutUniversityBlock'=>$aboutUniversityBlock,
+            'aboutOtherUniversityBlock'=>$aboutOtherUniversityBlock,
+            'ourServicesBlock'=>$ourServicesBlock,
+            'aboutUsBlock'=>$aboutUsBlock,
+            'haveQuestionsBlock'=>$haveQuestionsBlock,
+            'reviewBlock'=>$reviewBlock,
+            'contactsBlock'=>$contactsBlock,
+            'model'=>$model,
+        ]);
     }
 }
