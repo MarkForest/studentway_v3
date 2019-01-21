@@ -30,6 +30,6 @@
             'tours/js/jquery.subscribe.js',
       ];
       public $depends = [
-          //'yii\web\YiiAsset',
+          'yii\web\YiiAsset',
       ];
   }

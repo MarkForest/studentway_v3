@@ -17,7 +17,7 @@ class InstituteAsset extends AssetBundle
     public $baseUrl = '@web';
 
     public $css = [
-
+        'institute/css/bootstrap.min.css',
         'institute/css/font-awesome.min.css',
         'institute/css/animate.min.css',
         'institute/css/et-line-font.css',
@@ -28,8 +28,9 @@ class InstituteAsset extends AssetBundle
         'institute/css/sequence-theme.modern-slide-in.css',
     ];
     public $js = [
+//        'institute/js/jquery.js',
         'institute/js/wow.min.js',
-//        'institute/js/bootstrap.min.js',
+//       'institute/js/bootstrap.min.js',
         'institute/js/jquery.backstretch.min.js',
         'institute/js/isotope.js',
         'institute/js/imagesloaded.min.js',
@@ -44,7 +45,7 @@ class InstituteAsset extends AssetBundle
         'institute/js/ajax.js',
     ];
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapPluginAsset',
+//        'yii\web\YiiAsset',
+        //'yii\bootstrap\BootstrapPluginAsset',
     ];
 }
